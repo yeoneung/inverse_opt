@@ -1,0 +1,29 @@
+{
+  "purpose": "Validate convex normal-fibre distances, dual lower values, and multidirectional folding examples.",
+  "invisible_dimensions": [
+    2,
+    4,
+    8,
+    16
+  ],
+  "seeds": [
+    30100,
+    30101,
+    30102
+  ],
+  "source_loss_budgets": [
+    0.0,
+    0.01
+  ],
+  "targets": [
+    "split",
+    "orthant"
+  ],
+  "radius": 1.0,
+  "sampled_hidden_parameters": 512,
+  "independent_nnls_parameters": 8,
+  "absolute_primal_dual_tolerance": 2e-06,
+  "source_model": "Opposite scalar negative-halfline observations identify a dense nuisance direction; d source-invisible directions remain.",
+  "target_model": "Dense orthogonal action and parameter transforms of (u_+,(-u)_+) or u_+; target response depends on all d invisible coordinates.",
+  "interpretation": "Fixed theorem controls, not statistical benchmarks or external replication. Orthogonal transforms preserve the exact d-dimensional families. Floating-point diagnostics are not interval-certified."
+}

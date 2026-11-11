@@ -1,0 +1,55 @@
+{
+  "purpose": "Deterministic validation of weak-face inverse quadratic recovery and a planar separation oracle.",
+  "configuration_seeds": [
+    22100,
+    22101,
+    22102,
+    22103,
+    22104,
+    22105,
+    22106,
+    22107,
+    22108,
+    22109,
+    22110,
+    22111,
+    22112,
+    22113,
+    22114,
+    22115
+  ],
+  "parameter_dimension": 2,
+  "source_contexts": 2,
+  "target_contexts": 3,
+  "radius": 1.0,
+  "loss_budgets": [
+    0.0,
+    0.01,
+    0.1
+  ],
+  "target_types": [
+    "released",
+    "switching"
+  ],
+  "base_normals": [
+    [
+      1.0,
+      0.35
+    ],
+    [
+      -0.25,
+      1.0
+    ]
+  ],
+  "source_normal_perturbation": 0.08,
+  "source_latent_perturbation": 0.15,
+  "target_latent_perturbation": 0.25,
+  "target_rotation_range": [
+    -1.5,
+    1.5
+  ],
+  "exchange_absolute_squared_gap": 1e-07,
+  "exchange_max_iterations": 300,
+  "independent_angular_grid": 20001,
+  "analysis": "Report every seed, target type and budget, including failures; exact-oracle numerical upper and simplex-dual lower risk, reference risk, oracle versus independent dense direct-projection check, mixture feasibility, iterations and timing. Validate ray, wedge, complementary weak activation and nonlinear target-mixture examples against analytic formulas. This is a finite-dimensional optimization study, not a comparison of statistical learning algorithms. Numerical roots, projections and enclosing balls use floating point, not verified interval arithmetic."
+}

@@ -1,0 +1,9 @@
+{
+  "purpose": "Fixed rational global affine-line projection examples illustrating the scope of the homogeneous two-branch bound",
+  "instances": [
+    "quadrilateral",
+    "pentagon"
+  ],
+  "inputs": "All rational vertices, offsets and latent directions are in src/polygon_recovery.py and copied to run metadata",
+  "verification": "Exact normal-ray partition, rational enclosing and image-restricted radii; independent numerical polygon projections and conic centers"
+}

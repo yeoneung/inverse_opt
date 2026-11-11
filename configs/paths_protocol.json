@@ -1,0 +1,27 @@
+{
+  "seed": 20261110,
+  "base_dimensions": [
+    1,
+    2,
+    4,
+    7
+  ],
+  "arbitrary_chain_edges": [
+    2,
+    4,
+    7
+  ],
+  "circle_edges": [
+    4,
+    8,
+    12,
+    16,
+    24,
+    32,
+    48,
+    64
+  ],
+  "lift_scale": "delta=m^(-3)",
+  "exact_arithmetic": "Python Fraction normal-cone identities",
+  "scope": "Global line images in action dimension four; no planar sharpness claim"
+}

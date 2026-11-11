@@ -1,0 +1,79 @@
+{
+  "purpose": "Check the exact one-direction mixture classification, sharp 64/27 squared-error ratio and deterministic persistence under finite source-fit budgets.",
+  "phase_length_ratios": [
+    0.0,
+    0.1,
+    0.25,
+    0.5,
+    0.7,
+    0.9,
+    1.0
+  ],
+  "phase_angles_degrees": [
+    0.0,
+    15.0,
+    30.0,
+    45.0,
+    60.0,
+    70.52877936550931,
+    75.0,
+    90.0,
+    120.0,
+    150.0,
+    180.0
+  ],
+  "embedding_dimensions": [
+    2,
+    5,
+    12
+  ],
+  "embedding_seeds": [
+    25100,
+    25101,
+    25102,
+    25103
+  ],
+  "embedding_projection_realizability": "Use noncollinear nonzero branches with cosine >= -length_ratio, which permits projection of opposite latents onto one generated cone.",
+  "base_angle_cosine": 0.3333333333333333,
+  "radius": 1.0,
+  "source_loss_budgets": [
+    0.0,
+    0.0001,
+    0.0005,
+    0.001,
+    0.002,
+    0.005,
+    0.02,
+    0.1,
+    0.25
+  ],
+  "source_rotation_offsets": [
+    0.0,
+    0.005,
+    0.03
+  ],
+  "target_rotation_offsets": [
+    0.0,
+    0.005,
+    0.03
+  ],
+  "perturbation_minimum_budget": 0.0001,
+  "coupled_configuration_seeds": [
+    22100,
+    22101,
+    22102,
+    22103
+  ],
+  "coupled_budgets": [
+    0.0,
+    0.01
+  ],
+  "coupled_target_types": [
+    "released",
+    "switching"
+  ],
+  "absolute_squared_gap": 2e-06,
+  "maximum_exchange_iterations": 100,
+  "independent_angular_grid": 20001,
+  "interpretation": "Fixed synthetic cases, not independent replication. High output dimension in the branch study retains one-dimensional source ambiguity. Floating-point diagnostics are not interval-certified."
+}
