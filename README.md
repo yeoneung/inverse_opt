@@ -11,7 +11,7 @@ python -I run_checks.py
 python -I run_numerics.py --prefix run
 ```
 
-The test runner executes 41 local checks. The numerical runner executes seven
+The test runner executes 43 local checks. The numerical runner executes eight
 experiments and creates CSV/JSON outputs under `results/`. Existing output
 directories are preserved; choose another prefix to run a new batch.
 
@@ -32,6 +32,7 @@ python -I experiments/classification.py --output example_classification
 python -I experiments/polygon.py --output example_polygon
 python -I experiments/global_paths.py --output example_paths
 python -I experiments/capacity.py --output example_capacity
+python -I experiments/multidimensional.py --output example_multidimensional
 ```
 
 The capacity experiment uses 120 synthetic cases in action dimensions 4, 8, 16,
@@ -44,3 +45,10 @@ radius evaluation solves primal and dual conic problems. Floating-point solver
 diagnostics and conservative numerical backoffs do not constitute interval
 validation. Generated outputs and local environments are excluded from version
 control.
+
+The multidimensional experiment uses 135 paired conditions with two, four, or
+eight parameters and five nuisance radii. It reports forward-query, contact-anchor,
+upper-bound and convex-checking times separately. Its validation uses scalar
+central paths and Hausdorff envelopes, without computing a full multidimensional
+response partition. Large nuisance radii and loose covering bounds can leave the
+certificates uninformative. All specified conditions and solver warnings are retained.

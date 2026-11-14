@@ -10,9 +10,9 @@ sys.path.insert(0, str(ROOT))
 
 
 def main():
-    from src import optimal_recovery, mixture_recovery, fiber_certificate, polygon_recovery,projection_paths,adaptive_certificate
+    from src import optimal_recovery, mixture_recovery, fiber_certificate, polygon_recovery,projection_paths,adaptive_certificate,box_certificate
     from experiments import classification
-    for module in [optimal_recovery, mixture_recovery, fiber_certificate, polygon_recovery,projection_paths,adaptive_certificate,classification]:
+    for module in [optimal_recovery, mixture_recovery, fiber_certificate, polygon_recovery,projection_paths,adaptive_certificate,box_certificate,classification]:
         if not Path(module.__file__).resolve().is_relative_to(ROOT):
             raise RuntimeError('A scientific module was imported outside this code package.')
     start = time.perf_counter()

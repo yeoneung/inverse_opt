@@ -1,0 +1,10 @@
+{
+  "action_dimensions": [8, 16, 32],
+  "parameter_dimensions": [2, 4, 8],
+  "seeds": [735100, 735101, 735102],
+  "nuisance_radii": [0.0001, 0.001, 0.01, 0.1, 1.0],
+  "query_counts": [9, 33, 129],
+  "validation_probes": 5,
+  "validation_tolerance": 0.000003,
+  "design": "A full-rank box perturbation of a coupled-capacity latent line, with orthogonal nuisance columns of total radius eta. All 135 paired conditions are retained, including large nuisance radii. All parameters reproduce a saturated source-box observation. Query and anchor costs are shared across matched conditions and explicitly separated from certification cost."
+}

@@ -1,4 +1,4 @@
-"""Run the seven numerical experiments in new output directories."""
+"""Run the eight numerical experiments in new output directories."""
 import argparse
 import json
 import os
@@ -16,7 +16,7 @@ def main():
     args = parser.parse_args()
     if not args.prefix or Path(args.prefix).name != args.prefix or any(c in args.prefix for c in '/\\:'):
         raise ValueError('Use a simple output prefix')
-    outputs = {name:args.prefix+'_'+name for name in ['recovery','mixture','fiber','classification','polygon','paths','capacity']}
+    outputs = {name:args.prefix+'_'+name for name in ['recovery','mixture','fiber','classification','polygon','paths','capacity','multidimensional']}
     for name in outputs.values():
         if (ROOT/'results'/name).exists():
             raise FileExistsError('Choose a fresh prefix; preserving '+name)
@@ -30,7 +30,8 @@ def main():
     timings = {}
     for name, script in [('recovery','recovery.py'),
                          ('mixture','mixture.py'),('fiber','fiber.py'),('classification','classification.py'),('polygon','polygon.py'),
-                         ('paths','global_paths.py'),('capacity','capacity.py')]:
+                         ('paths','global_paths.py'),('capacity','capacity.py'),
+                         ('multidimensional','multidimensional.py')]:
         command = [sys.executable, '-I', str(ROOT/'experiments'/script), '--output', outputs[name]]
         if name == 'mixture':
             command += ['--coupled-source',outputs['recovery']]
