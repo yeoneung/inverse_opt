@@ -11,7 +11,7 @@ python -I run_checks.py
 python -I run_numerics.py --prefix run
 ```
 
-The test runner executes 43 local checks. The numerical runner executes eight
+The test runner executes 49 local checks. The numerical runner executes nine
 experiments and creates CSV/JSON outputs under `results/`. Existing output
 directories are preserved; choose another prefix to run a new batch.
 
@@ -52,3 +52,22 @@ upper-bound and convex-checking times separately. Its validation uses scalar
 central paths and Hausdorff envelopes, without computing a full multidimensional
 response partition. Large nuisance radii and loose covering bounds can leave the
 certificates uninformative. All specified conditions and solver warnings are retained.
+
+## Computational separation controls
+
+```sh
+python -I experiments/consistency_separation.py --output example_complexity
+python -I experiments/exact_separation_controls.py --output results/example_complexity/exact_controls.json
+```
+
+The construction has an explicit mixed minimax center and risk. Selecting a
+consistent center reduces to a discrete choice among convex box projections,
+although every central candidate's worst error is evaluated by two fixed
+responses. The experiment checks 15 formulas against independent Boolean
+enumeration. Generated formulas use every variable and retain two or three
+independent source-kernel directions.
+
+A separate implementation imports only the standard library and enumerates
+box faces with rational arithmetic. It recovers the three analytic controls
+13/2, 125/36, and 649/72 exactly. Exhaustive enumeration is for small-instance
+verification; numerical primal-dual residuals are not interval certificates.

@@ -1,4 +1,4 @@
-"""Run the eight numerical experiments in new output directories."""
+"""Run the nine numerical experiments in new output directories."""
 import argparse
 import json
 import os
@@ -16,7 +16,7 @@ def main():
     args = parser.parse_args()
     if not args.prefix or Path(args.prefix).name != args.prefix or any(c in args.prefix for c in '/\\:'):
         raise ValueError('Use a simple output prefix')
-    outputs = {name:args.prefix+'_'+name for name in ['recovery','mixture','fiber','classification','polygon','paths','capacity','multidimensional']}
+    outputs = {name:args.prefix+'_'+name for name in ['recovery','mixture','fiber','classification','polygon','paths','capacity','multidimensional','complexity']}
     for name in outputs.values():
         if (ROOT/'results'/name).exists():
             raise FileExistsError('Choose a fresh prefix; preserving '+name)
@@ -31,7 +31,8 @@ def main():
     for name, script in [('recovery','recovery.py'),
                          ('mixture','mixture.py'),('fiber','fiber.py'),('classification','classification.py'),('polygon','polygon.py'),
                          ('paths','global_paths.py'),('capacity','capacity.py'),
-                         ('multidimensional','multidimensional.py')]:
+                         ('multidimensional','multidimensional.py'),
+                         ('complexity','consistency_separation.py')]:
         command = [sys.executable, '-I', str(ROOT/'experiments'/script), '--output', outputs[name]]
         if name == 'mixture':
             command += ['--coupled-source',outputs['recovery']]
@@ -41,6 +42,11 @@ def main():
         timings[name] = time.perf_counter()-started
         if completed.returncode:
             raise RuntimeError('Experiment failed; see '+str(log_directory/(name+'.log')))
+        if name=='complexity':
+            with (log_directory/'complexity_exact.log').open('w',encoding='utf-8') as log:
+                subprocess.run([sys.executable,'-I',str(ROOT/'experiments/exact_separation_controls.py'),
+                    '--output',str(ROOT/'results'/outputs[name]/'exact_controls.json')],
+                    cwd=ROOT,env=environment,stdout=log,stderr=subprocess.STDOUT,check=True)
         print(name+' complete: '+outputs[name],flush=True)
     report = dict(prefix=args.prefix,outputs=outputs,seconds=timings,
                   note='Fresh computations. Runtime differences across machines are expected.')
