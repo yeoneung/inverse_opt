@@ -21,10 +21,9 @@ warnings, environment and summary. balanced_initial retains the
 first independent execution. Scientific values agree; elapsed times vary.
 experiments/report_balanced_base.py retains the complete numerical report and Fig3.
 experiments/report_scalar_studies.py generates the scalar calibration in Fig2.
-experiments/report_jogo.py renders the JGO presentation with every condition retained.
-experiments/report_jogo.py renders the journal-facing exposition with
-exact-risk controls first. It uses the same complete raw runs, retains
-all experimental conditions, and changes no table values.
+experiments/report_jogo.py generates the balanced-study exposition and
+the separate folded-ball implementation controls from the complete raw
+runs. Every condition is retained and table values are unchanged.
 verification/balanced_table_values.json records the numerical table values.
 
 GLOBAL REFERENCES
