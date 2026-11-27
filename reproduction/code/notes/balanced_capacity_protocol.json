@@ -1,0 +1,16 @@
+{
+  "reference_pairs": [[4, 2], [4, 3]],
+  "scaling_pairs": [[8, 2], [16, 4], [32, 2], [32, 4], [32, 8]],
+  "seeds": [846100, 846101, 846102],
+  "capacity_factors": [0.7, 1.4],
+  "query_budgets": [33, 129, 513],
+  "timing_repetitions": 3,
+  "structured_parameter_dimensions": [2, 4, 8, 16, 32],
+  "structured_rotation_seeds": [91720, 91721],
+  "structured_affine_controls": [false, true],
+  "latent_singular_value": 0.75,
+  "reference_validation_probes": 64,
+  "detection_threshold": 0.000001,
+  "bound_check_tolerance": 0.000003,
+  "design": "Balanced full-rank parameter boxes with dense shared capacity constraints; independent all-active-subset global references on the small problems. All parameter directions have the same singular value. For fixed q and seed, G uses leading columns of the same full orthogonal matrix. Fixed-q=32 comparisons therefore increase latent dimension without changing the target or existing latent columns. A separate rotated folded-ball family has exact global risks and affine zero-penalty controls. Every timing repetition starts a fresh query pipeline, including forward setup, all forward queries, sampled-anchor solves, upper-risk calculation, separation SOCPs and bookkeeping. All planned outcomes, including non-detections and failures, are retained."
+}

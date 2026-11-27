@@ -1,0 +1,22 @@
+{
+  "protocol_sha256": "f8645f9b322e014ae309e7b3cfb48eb57f9ba14f89f1fee0ee696a4d4548dcf0",
+  "cases": 120,
+  "failures": [],
+  "seconds": 39.64164710001205,
+  "environment": {
+    "python": "3.12.10",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "packages": {
+      "numpy": "2.5.2",
+      "scipy": "1.18.0",
+      "cvxpy": "1.7.2",
+      "clarabel": "0.11.1"
+    },
+    "threads": 1
+  },
+  "warning_count": 407,
+  "solver_warnings": [
+    "Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information."
+  ],
+  "scope": "Synthetic holdout after pilot. Numerical KKT/primal-dual diagnostics, not interval validation or a claim about real deployment data."
+}

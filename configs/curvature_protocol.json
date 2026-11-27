@@ -1,0 +1,11 @@
+{
+  "radii": [0.1, 0.05, 0.025, 0.0125],
+  "sample_points": 4001,
+  "minimax_absolute_tolerance": 1e-10,
+  "curvatures": ["1/2", "1", "2"],
+  "parabolic_endpoints": ["1/5", "1/10", "1/20"],
+  "disk_heights": [1.25, 2.0, 3.0],
+  "paired_radii": [0.2, 0.1, 0.05],
+  "paired_curvatures": [0.0, 0.5, 1.0, 2.0],
+  "scope": "Deterministic local theory controls; all parabolic identities use exact rational arithmetic."
+}

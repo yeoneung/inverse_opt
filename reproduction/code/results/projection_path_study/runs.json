@@ -1,0 +1,224 @@
+{
+  "exact_checks": [
+    {
+      "vertices": 3,
+      "dimension": 3,
+      "maximum_normal_violation": "0",
+      "minimum_vertex_plateau": "5703/2780"
+    },
+    {
+      "vertices": 5,
+      "dimension": 3,
+      "maximum_normal_violation": "0",
+      "minimum_vertex_plateau": "1415309/803650"
+    },
+    {
+      "vertices": 8,
+      "dimension": 3,
+      "maximum_normal_violation": "0",
+      "minimum_vertex_plateau": "45481621/24091337"
+    },
+    {
+      "vertices": 3,
+      "dimension": 4,
+      "maximum_normal_violation": "0",
+      "minimum_vertex_plateau": "86213/49406"
+    },
+    {
+      "vertices": 5,
+      "dimension": 4,
+      "maximum_normal_violation": "0",
+      "minimum_vertex_plateau": "2012801/1091200"
+    },
+    {
+      "vertices": 8,
+      "dimension": 4,
+      "maximum_normal_violation": "0",
+      "minimum_vertex_plateau": "87456491/48080057"
+    },
+    {
+      "vertices": 3,
+      "dimension": 6,
+      "maximum_normal_violation": "0",
+      "minimum_vertex_plateau": "92521/50660"
+    },
+    {
+      "vertices": 5,
+      "dimension": 6,
+      "maximum_normal_violation": "0",
+      "minimum_vertex_plateau": "4009601/2147200"
+    },
+    {
+      "vertices": 8,
+      "dimension": 6,
+      "maximum_normal_violation": "0",
+      "minimum_vertex_plateau": "133615786/72090057"
+    },
+    {
+      "vertices": 3,
+      "dimension": 9,
+      "maximum_normal_violation": "0",
+      "minimum_vertex_plateau": "177213/111806"
+    },
+    {
+      "vertices": 5,
+      "dimension": 9,
+      "maximum_normal_violation": "0",
+      "minimum_vertex_plateau": "1543201/840800"
+    },
+    {
+      "vertices": 8,
+      "dimension": 9,
+      "maximum_normal_violation": "0",
+      "minimum_vertex_plateau": "191539841/103783257"
+    },
+    {
+      "vertices": 5,
+      "dimension": 4,
+      "maximum_normal_violation": "0",
+      "minimum_vertex_plateau": "100901/55450"
+    }
+  ],
+  "cases": [
+    {
+      "edges": 4,
+      "delta": 0.015625,
+      "M": 2.99951171875,
+      "mixed_lower": 1.010207800486095,
+      "mixed_upper": 1.0102078244281174,
+      "single_risk": 2.511398378827901,
+      "ratio_lower": 2.486021507752242,
+      "ratio_upper": 2.486021566671192,
+      "theoretical_ratio_lower": 2.4591738712776183,
+      "instance_ratio_upper": 2.9191149272868575,
+      "segment_count_ratio_upper": 3.937251968502953,
+      "qp_projection_error": 7.642690682882981e-14,
+      "normal_condition_violation": 0.0,
+      "minimum_plateau": 1.333387595637311
+    },
+    {
+      "edges": 8,
+      "delta": 0.001953125,
+      "M": 1.5857788082323738,
+      "mixed_lower": 1.0024689160823974,
+      "mixed_upper": 1.0024690644775585,
+      "single_risk": 3.5623263477124043,
+      "ratio_lower": 3.553552397718056,
+      "ratio_upper": 3.5535529237493093,
+      "theoretical_ratio_lower": 3.5465898385580026,
+      "instance_ratio_upper": 3.70161584508592,
+      "segment_count_ratio_upper": 3.9843596813136535,
+      "qp_projection_error": 1.025153666121787e-12,
+      "normal_condition_violation": 0.0,
+      "minimum_plateau": 1.6306049713923683
+    },
+    {
+      "edges": 12,
+      "delta": 0.0005787037037037037,
+      "M": 1.2679485226351694,
+      "mixed_lower": 1.001090505212915,
+      "mixed_upper": 1.001090514212318,
+      "single_risk": 3.7996553049262274,
+      "ratio_lower": 3.795516240522853,
+      "ratio_upper": 3.795516274643025,
+      "theoretical_ratio_lower": 3.7924083409024627,
+      "instance_ratio_upper": 3.8649226555034,
+      "segment_count_ratio_upper": 3.9930525362296008,
+      "qp_projection_error": 2.2352561022117397e-12,
+      "normal_condition_violation": 0.0,
+      "minimum_plateau": 1.788675551213788
+    },
+    {
+      "edges": 16,
+      "delta": 0.000244140625,
+      "M": 1.152240815768137,
+      "mixed_lower": 1.0006120724100567,
+      "mixed_upper": 1.0006121646783483,
+      "single_risk": 3.886136465300167,
+      "ratio_lower": 3.8837589652424267,
+      "ratio_upper": 3.8837593233710312,
+      "theoretical_ratio_lower": 3.8820134612900032,
+      "instance_ratio_upper": 3.9235284200116465,
+      "segment_count_ratio_upper": 3.9960927953932224,
+      "qp_projection_error": 4.469420826275144e-12,
+      "normal_condition_violation": 0.0,
+      "minimum_plateau": 1.8678741338748306
+    },
+    {
+      "edges": 24,
+      "delta": 7.233796296296296e-05,
+      "M": 1.0681483369563016,
+      "mixed_lower": 1.0002716075569364,
+      "mixed_upper": 1.0002716217047698,
+      "single_risk": 3.9490176635170986,
+      "ratio_lower": 3.9479453158800615,
+      "ratio_upper": 3.9479453717197672,
+      "theoretical_ratio_lower": 3.9471725826138147,
+      "instance_ratio_upper": 3.965856122990942,
+      "segment_count_ratio_upper": 3.99826370042697,
+      "qp_projection_error": 1.4408609786422163e-12,
+      "normal_condition_violation": 0.0,
+      "minimum_plateau": 1.9361995571228514
+    },
+    {
+      "edges": 32,
+      "delta": 3.0517578125e-05,
+      "M": 1.038429437330894,
+      "mixed_lower": 1.000152695585949,
+      "mixed_upper": 1.0001526970915178,
+      "single_risk": 3.9712473177200307,
+      "ratio_lower": 3.970641012385978,
+      "ratio_upper": 3.9706410183631387,
+      "theoretical_ratio_lower": 3.9702076850479635,
+      "instance_ratio_upper": 3.9807631813621023,
+      "segment_count_ratio_upper": 3.999023377880799,
+      "qp_projection_error": 1.0203536504794256e-12,
+      "normal_condition_violation": 0.0,
+      "minimum_plateau": 1.9629927311867523
+    },
+    {
+      "edges": 48,
+      "delta": 9.04224537037037e-06,
+      "M": 1.0171102770888547,
+      "mixed_lower": 1.0000678381197043,
+      "mixed_upper": 1.0000678434223067,
+      "single_risk": 3.9871968229990356,
+      "ratio_lower": 3.9869263362718983,
+      "ratio_upper": 3.986926357411549,
+      "theoretical_ratio_lower": 3.986734515924707,
+      "instance_ratio_upper": 3.9914404887936357,
+      "segment_count_ratio_upper": 3.9995659604471876,
+      "qp_projection_error": 6.2515141975906695e-12,
+      "normal_condition_violation": 0.0,
+      "minimum_plateau": 1.9831775595289163
+    },
+    {
+      "edges": 64,
+      "delta": 3.814697265625e-06,
+      "M": 1.0096305466265025,
+      "mixed_lower": 1.0000381537053378,
+      "mixed_upper": 1.0000381537752652,
+      "single_risk": 3.992793347755074,
+      "ratio_lower": 3.992641013427133,
+      "ratio_upper": 3.9926410137063173,
+      "theoretical_ratio_lower": 3.9925333456183294,
+      "instance_ratio_upper": 3.995183342143584,
+      "segment_count_ratio_upper": 3.9997558556494823,
+      "qp_projection_error": 1.9540135401921843e-11,
+      "normal_condition_violation": 0.0,
+      "minimum_plateau": 1.9904613161134228
+    }
+  ],
+  "seconds": 0.26922299999569077,
+  "warnings": [
+    "Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.",
+    "Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.",
+    "Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.",
+    "Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.",
+    "Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.",
+    "Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.",
+    "Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.",
+    "Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information."
+  ],
+  "conclusion": "C_line=4 follows from the algebraic normal-cone construction; the numerical cases are independent diagnostics."
+}

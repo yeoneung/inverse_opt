@@ -1,0 +1,680 @@
+[
+  {
+    "name": "single_clause",
+    "variables": 3,
+    "clauses": [
+      [
+        0,
+        1,
+        2
+      ]
+    ],
+    "source_nullity": 3,
+    "satisfying_assignments": 3,
+    "k": 4,
+    "action_dimension": 16,
+    "mixed_risk": 4.0,
+    "baseline": 6.5,
+    "proper_lower": 6.499999999919584,
+    "proper_upper": 6.500000000112413,
+    "central_risk": 6.500000000112414,
+    "center_parameter": [
+      0.24999999997189656,
+      -0.24999999997189656,
+      0.24999999997189656,
+      -0.24999999997189656
+    ],
+    "patterns": 8,
+    "seconds": 0.009740699897520244,
+    "max_equality_residual": 5.551115123125783e-17,
+    "max_box_violation": 0.0,
+    "max_stationarity_residual": 3.3306690738754696e-16,
+    "max_subproblem_gap": 9.641487608291754e-11
+  },
+  {
+    "name": "repeated_unsatisfiable",
+    "variables": 1,
+    "clauses": [
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "source_nullity": 1,
+    "satisfying_assignments": 0,
+    "k": 2,
+    "action_dimension": 8,
+    "mixed_risk": 2.0,
+    "baseline": 3.25,
+    "proper_lower": 3.4722222222186057,
+    "proper_upper": 3.4722222222216135,
+    "central_risk": 3.4722222222216135,
+    "center_parameter": [
+      0.2500000000003913,
+      -0.08333333333346377
+    ],
+    "patterns": 2,
+    "seconds": 0.004723899997770786,
+    "max_equality_residual": 2.7755575615628914e-17,
+    "max_box_violation": 3.912981050291364e-13,
+    "max_stationarity_residual": 6.661338147750939e-16,
+    "max_subproblem_gap": 8.083644864598227e-12
+  },
+  {
+    "name": "distinct_unsatisfiable",
+    "variables": 4,
+    "clauses": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        1,
+        3
+      ],
+      [
+        0,
+        2,
+        3
+      ],
+      [
+        1,
+        2,
+        3
+      ]
+    ],
+    "source_nullity": 1,
+    "satisfying_assignments": 0,
+    "k": 5,
+    "action_dimension": 20,
+    "mixed_risk": 5.0,
+    "baseline": 8.125,
+    "proper_lower": 9.013888888870937,
+    "proper_upper": 9.01388888888779,
+    "central_risk": 9.01388888888779,
+    "center_parameter": [
+      0.25000000000034134,
+      -0.08333333333344711,
+      -0.08333333333344711,
+      -0.08333333333344711,
+      -0.08333333333344711
+    ],
+    "patterns": 16,
+    "seconds": 0.011600199970416725,
+    "max_equality_residual": 4.163336342344337e-17,
+    "max_box_violation": 3.413380689210044e-13,
+    "max_stationarity_residual": 4.440892098500626e-16,
+    "max_subproblem_gap": 8.4258156007877e-12
+  },
+  {
+    "name": "random_3_0",
+    "variables": 3,
+    "clauses": [
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        2,
+        1
+      ]
+    ],
+    "source_nullity": 2,
+    "satisfying_assignments": 1,
+    "k": 4,
+    "action_dimension": 16,
+    "mixed_risk": 4.0,
+    "baseline": 6.5,
+    "proper_lower": 6.499999999997994,
+    "proper_upper": 6.500000000003657,
+    "central_risk": 6.5000000000036575,
+    "center_parameter": [
+      0.24999999999908587,
+      0.24999999999908587,
+      -0.24999999999908587,
+      -0.24999999999908587
+    ],
+    "patterns": 8,
+    "seconds": 0.006841600057668984,
+    "max_equality_residual": 1.1102230246251565e-15,
+    "max_box_violation": 1.3931189535298927e-11,
+    "max_stationarity_residual": 8.137934770502397e-14,
+    "max_subproblem_gap": 8.548117769180408e-11
+  },
+  {
+    "name": "random_3_1",
+    "variables": 3,
+    "clauses": [
+      [
+        1,
+        1,
+        2
+      ],
+      [
+        1,
+        0,
+        2
+      ]
+    ],
+    "source_nullity": 2,
+    "satisfying_assignments": 1,
+    "k": 4,
+    "action_dimension": 16,
+    "mixed_risk": 4.0,
+    "baseline": 6.5,
+    "proper_lower": 6.499999999997994,
+    "proper_upper": 6.500000000003657,
+    "central_risk": 6.5000000000036575,
+    "center_parameter": [
+      0.24999999999908587,
+      -0.24999999999908587,
+      -0.24999999999908587,
+      0.24999999999908587
+    ],
+    "patterns": 8,
+    "seconds": 0.00676189991645515,
+    "max_equality_residual": 1.1102230246251565e-15,
+    "max_box_violation": 1.3931078512996464e-11,
+    "max_stationarity_residual": 8.104628079763643e-14,
+    "max_subproblem_gap": 8.548162178101393e-11
+  },
+  {
+    "name": "random_3_2",
+    "variables": 3,
+    "clauses": [
+      [
+        2,
+        1,
+        0
+      ],
+      [
+        2,
+        0,
+        0
+      ]
+    ],
+    "source_nullity": 2,
+    "satisfying_assignments": 1,
+    "k": 4,
+    "action_dimension": 16,
+    "mixed_risk": 4.0,
+    "baseline": 6.5,
+    "proper_lower": 6.499999999997994,
+    "proper_upper": 6.500000000003657,
+    "central_risk": 6.500000000003656,
+    "center_parameter": [
+      0.2499999999990858,
+      -0.2499999999990858,
+      -0.24999999999908581,
+      0.2499999999990858
+    ],
+    "patterns": 8,
+    "seconds": 0.006724199978634715,
+    "max_equality_residual": 9.992007221626409e-16,
+    "max_box_violation": 1.3931134024147696e-11,
+    "max_stationarity_residual": 8.126832540256146e-14,
+    "max_subproblem_gap": 8.548173280331639e-11
+  },
+  {
+    "name": "random_3_3",
+    "variables": 3,
+    "clauses": [
+      [
+        0,
+        0,
+        2
+      ],
+      [
+        1,
+        2,
+        1
+      ]
+    ],
+    "source_nullity": 2,
+    "satisfying_assignments": 1,
+    "k": 4,
+    "action_dimension": 16,
+    "mixed_risk": 4.0,
+    "baseline": 6.5,
+    "proper_lower": 6.499999999996668,
+    "proper_upper": 6.500000000006039,
+    "central_risk": 6.500000000006039,
+    "center_parameter": [
+      0.24999999999849043,
+      -0.24999999999849037,
+      -0.24999999999849037,
+      0.24999999999849043
+    ],
+    "patterns": 8,
+    "seconds": 0.0067010000348091125,
+    "max_equality_residual": 3.3306690738754696e-16,
+    "max_box_violation": 2.7433055826975306e-12,
+    "max_stationarity_residual": 8.215650382226158e-14,
+    "max_subproblem_gap": 7.139178137549607e-11
+  },
+  {
+    "name": "random_5_0",
+    "variables": 5,
+    "clauses": [
+      [
+        1,
+        0,
+        4
+      ],
+      [
+        1,
+        4,
+        0
+      ],
+      [
+        1,
+        2,
+        3
+      ],
+      [
+        1,
+        3,
+        0
+      ]
+    ],
+    "source_nullity": 3,
+    "satisfying_assignments": 3,
+    "k": 6,
+    "action_dimension": 24,
+    "mixed_risk": 6.0,
+    "baseline": 9.75,
+    "proper_lower": 9.749999999932061,
+    "proper_upper": 9.750000000064997,
+    "central_risk": 9.750000000064999,
+    "center_parameter": [
+      0.24999999998916708,
+      -0.24999999998916708,
+      -0.24999999998916708,
+      -0.24999999998916708,
+      0.24999999998916708,
+      0.24999999998916708
+    ],
+    "patterns": 32,
+    "seconds": 0.02148759993724525,
+    "max_equality_residual": 1.4765966227514582e-12,
+    "max_box_violation": 1.7841284005726266e-13,
+    "max_stationarity_residual": 8.559819519859957e-14,
+    "max_subproblem_gap": 9.241618581512512e-11
+  },
+  {
+    "name": "random_5_1",
+    "variables": 5,
+    "clauses": [
+      [
+        1,
+        2,
+        0
+      ],
+      [
+        3,
+        2,
+        3
+      ],
+      [
+        0,
+        4,
+        0
+      ],
+      [
+        1,
+        3,
+        0
+      ]
+    ],
+    "source_nullity": 2,
+    "satisfying_assignments": 0,
+    "k": 6,
+    "action_dimension": 24,
+    "mixed_risk": 6.0,
+    "baseline": 9.75,
+    "proper_lower": 10.416666666662524,
+    "proper_upper": 10.416666666665828,
+    "central_risk": 10.41666666666583,
+    "center_parameter": [
+      0.2500000000001884,
+      -0.25000000000017975,
+      0.0833333333333875,
+      -0.08333333333339614,
+      -0.08333333333339614,
+      0.25000000000017114
+    ],
+    "patterns": 32,
+    "seconds": 0.02164179994724691,
+    "max_equality_residual": 3.2612801348363973e-14,
+    "max_box_violation": 5.95745675013859e-13,
+    "max_stationarity_residual": 1.0091927293842673e-13,
+    "max_subproblem_gap": 5.515388146193345e-11
+  },
+  {
+    "name": "random_5_2",
+    "variables": 5,
+    "clauses": [
+      [
+        4,
+        2,
+        3
+      ],
+      [
+        4,
+        0,
+        1
+      ],
+      [
+        4,
+        3,
+        3
+      ],
+      [
+        4,
+        0,
+        1
+      ]
+    ],
+    "source_nullity": 3,
+    "satisfying_assignments": 1,
+    "k": 6,
+    "action_dimension": 24,
+    "mixed_risk": 6.0,
+    "baseline": 9.75,
+    "proper_lower": 9.749999999998641,
+    "proper_upper": 9.750000000002734,
+    "central_risk": 9.750000000002734,
+    "center_parameter": [
+      0.2499999999995444,
+      -0.2499999999995444,
+      -0.2499999999995444,
+      -0.2499999999995444,
+      -0.24999999999954436,
+      0.2499999999995444
+    ],
+    "patterns": 32,
+    "seconds": 0.021711599896661937,
+    "max_equality_residual": 6.056266599330229e-14,
+    "max_box_violation": 1.3011647315153141e-11,
+    "max_stationarity_residual": 6.09512440519211e-14,
+    "max_subproblem_gap": 9.801270905995807e-11
+  },
+  {
+    "name": "random_5_3",
+    "variables": 5,
+    "clauses": [
+      [
+        3,
+        4,
+        2
+      ],
+      [
+        2,
+        2,
+        1
+      ],
+      [
+        2,
+        2,
+        3
+      ],
+      [
+        2,
+        0,
+        4
+      ]
+    ],
+    "source_nullity": 2,
+    "satisfying_assignments": 1,
+    "k": 6,
+    "action_dimension": 24,
+    "mixed_risk": 6.0,
+    "baseline": 9.75,
+    "proper_lower": 9.749999999998664,
+    "proper_upper": 9.750000000002641,
+    "central_risk": 9.75000000000264,
+    "center_parameter": [
+      0.24999999999950692,
+      0.24999999999958636,
+      0.24999999999958636,
+      -0.2499999999995466,
+      0.24999999999958636,
+      -0.24999999999954664
+    ],
+    "patterns": 32,
+    "seconds": 0.02143459999933839,
+    "max_equality_residual": 7.061684570430771e-12,
+    "max_box_violation": 4.502676009821016e-12,
+    "max_stationarity_residual": 4.674038933671909e-14,
+    "max_subproblem_gap": 8.322009747985248e-11
+  },
+  {
+    "name": "random_7_0",
+    "variables": 7,
+    "clauses": [
+      [
+        6,
+        5,
+        5
+      ],
+      [
+        6,
+        3,
+        5
+      ],
+      [
+        4,
+        1,
+        0
+      ],
+      [
+        6,
+        3,
+        2
+      ],
+      [
+        4,
+        0,
+        3
+      ]
+    ],
+    "source_nullity": 3,
+    "satisfying_assignments": 2,
+    "k": 8,
+    "action_dimension": 32,
+    "mixed_risk": 8.0,
+    "baseline": 13.0,
+    "proper_lower": 12.999999999999108,
+    "proper_upper": 13.000000000002514,
+    "central_risk": 13.000000000002512,
+    "center_parameter": [
+      0.24999999999967296,
+      -0.2499999999997243,
+      -0.24999999999967296,
+      -0.24999999999967296,
+      -0.24999999999967296,
+      0.2499999999997243,
+      -0.24999999999967296,
+      0.24999999999967296
+    ],
+    "patterns": 128,
+    "seconds": 0.08294570003636181,
+    "max_equality_residual": 1.0147438445073931e-13,
+    "max_box_violation": 2.052996661561224e-11,
+    "max_stationarity_residual": 5.2513549064769904e-14,
+    "max_subproblem_gap": 1.358047008181984e-10
+  },
+  {
+    "name": "random_7_1",
+    "variables": 7,
+    "clauses": [
+      [
+        0,
+        1,
+        4
+      ],
+      [
+        4,
+        6,
+        5
+      ],
+      [
+        0,
+        3,
+        5
+      ],
+      [
+        2,
+        4,
+        2
+      ],
+      [
+        0,
+        3,
+        4
+      ]
+    ],
+    "source_nullity": 3,
+    "satisfying_assignments": 0,
+    "k": 8,
+    "action_dimension": 32,
+    "mixed_risk": 8.0,
+    "baseline": 13.0,
+    "proper_lower": 13.374999999996728,
+    "proper_upper": 13.375000000002924,
+    "central_risk": 13.375000000002924,
+    "center_parameter": [
+      0.2500000000000449,
+      -0.250000000000018,
+      0.2499999999993867,
+      -3.1564164239917957e-13,
+      0.2499999999993867,
+      -0.2499999999994136,
+      -0.2499999999994136,
+      0.24999999999878228
+    ],
+    "patterns": 128,
+    "seconds": 0.08132999995723367,
+    "max_equality_residual": 7.997297268858006e-12,
+    "max_box_violation": 3.667066650336892e-13,
+    "max_stationarity_residual": 6.52811138479592e-14,
+    "max_subproblem_gap": 1.437086005751098e-10
+  },
+  {
+    "name": "random_7_2",
+    "variables": 7,
+    "clauses": [
+      [
+        6,
+        0,
+        0
+      ],
+      [
+        6,
+        2,
+        5
+      ],
+      [
+        6,
+        1,
+        1
+      ],
+      [
+        3,
+        1,
+        0
+      ],
+      [
+        6,
+        1,
+        4
+      ]
+    ],
+    "source_nullity": 3,
+    "satisfying_assignments": 1,
+    "k": 8,
+    "action_dimension": 32,
+    "mixed_risk": 8.0,
+    "baseline": 13.0,
+    "proper_lower": 12.999999999998646,
+    "proper_upper": 13.000000000003897,
+    "central_risk": 13.000000000003897,
+    "center_parameter": [
+      0.24999999999947234,
+      -0.24999999999950834,
+      -0.24999999999950834,
+      -0.24999999999950834,
+      0.24999999999954434,
+      -0.24999999999950834,
+      -0.24999999999950834,
+      0.24999999999954436
+    ],
+    "patterns": 128,
+    "seconds": 0.08035659999586642,
+    "max_equality_residual": 2.775224494655504e-12,
+    "max_box_violation": 1.7996715229173788e-13,
+    "max_stationarity_residual": 5.739853037312059e-14,
+    "max_subproblem_gap": 1.2792344961098934e-10
+  },
+  {
+    "name": "random_7_3",
+    "variables": 7,
+    "clauses": [
+      [
+        2,
+        5,
+        3
+      ],
+      [
+        6,
+        2,
+        4
+      ],
+      [
+        2,
+        5,
+        0
+      ],
+      [
+        5,
+        1,
+        5
+      ],
+      [
+        5,
+        2,
+        5
+      ]
+    ],
+    "source_nullity": 3,
+    "satisfying_assignments": 1,
+    "k": 8,
+    "action_dimension": 32,
+    "mixed_risk": 8.0,
+    "baseline": 13.0,
+    "proper_lower": 12.99999999999908,
+    "proper_upper": 13.000000000002643,
+    "central_risk": 13.000000000002645,
+    "center_parameter": [
+      0.24999999999965256,
+      -0.24999999999966765,
+      0.24999999999968267,
+      0.24999999999968273,
+      -0.24999999999966763,
+      -0.24999999999966763,
+      -0.24999999999966757,
+      -0.24999999999966763
+    ],
+    "patterns": 128,
+    "seconds": 0.08733750006649643,
+    "max_equality_residual": 4.13125089693267e-12,
+    "max_box_violation": 3.613220833642572e-13,
+    "max_stationarity_residual": 2.2359891715950653e-13,
+    "max_subproblem_gap": 1.4224710298549326e-10
+  }
+]

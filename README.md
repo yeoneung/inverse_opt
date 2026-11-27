@@ -1,73 +1,71 @@
 # Inverse optimization numerics
 
-Numerical routines for polyhedral projections, image-restricted and unrestricted
-recovery, exact polygonal examples, and convex normal-cone distance certificates.
+Numerical code for quadratic projections, minimax recovery, convex separation
+certificates, and smooth-response curvature.
 
 Use Python 3.12:
 
 ```sh
 python -m pip install -r requirements.txt
 python -I run_checks.py
-python -I run_numerics.py --prefix run
+python -I reproduction/verification/check_balanced_results.py --compare-initial
 ```
 
-The test runner executes 49 local checks. The numerical runner executes nine
-experiments and creates CSV/JSON outputs under `results/`. Existing output
-directories are preserved; choose another prefix to run a new batch.
+The root runners execute the self-contained `reproduction/code` pipeline.
+It includes 63 numerical tests and eleven experiment drivers. The existing
+standalone source directories remain available.
 
-## Layout
-
-- `src/`: recovery routines, normal-cone certificates, projection paths, and exact geometry.
-- `experiments/`: deterministic experiment drivers.
-- `configs/`: numerical parameters, random seeds, tolerances, and query budgets.
-- `tests/`: analytic controls and independent numerical checks.
-
-## Individual experiments
+## Run experiments
 
 ```sh
-python -I experiments/recovery.py --output example_recovery
-python -I experiments/mixture.py --output example_mixture --coupled-source example_recovery
-python -I experiments/fiber.py --output example_fiber
-python -I experiments/classification.py --output example_classification
-python -I experiments/polygon.py --output example_polygon
-python -I experiments/global_paths.py --output example_paths
-python -I experiments/capacity.py --output example_capacity
-python -I experiments/multidimensional.py --output example_multidimensional
+# Balanced multidimensional capacity study only
+python -I run_numerics.py --prefix run --balanced-only
+python -I reproduction/verification/check_balanced_results.py --fresh run_balanced
+
+# All eleven numerical studies
+python -I run_numerics.py --prefix all_studies
+python -I reproduction/verification/check_reproduction.py --prefix all_studies
+python -I reproduction/verification/check_balanced_results.py --fresh all_studies_balanced
+
+# Individual scalar-capacity and curvature studies
+python -I reproduction/code/experiments/scalar_capacity.py --output scalar_run
+python -I reproduction/code/experiments/smooth_curvature.py --output curvature_run
 ```
 
-The capacity experiment uses 120 synthetic cases in action dimensions 4, 8, 16,
-and 32, with forward-query budgets of 9, 33, and 129. Numerical workers use one
-BLAS/OMP thread. Timings and solver-warning counts can vary across machines.
+Use a new output prefix. Existing result directories are preserved.
 
-Finite witness points must be model responses. Anchors use their contact means,
-and finite-query upper values include a Lipschitz covering term. Each adaptive
-radius evaluation solves primal and dual conic problems. Floating-point solver
-diagnostics and conservative numerical backoffs do not constitute interval
-validation. Generated outputs and local environments are excluded from version
-control.
+## Included experiments and data
 
-The multidimensional experiment uses 135 paired conditions with two, four, or
-eight parameters and five nuisance radii. It reports forward-query, contact-anchor,
-upper-bound and convex-checking times separately. Its validation uses scalar
-central paths and Hausdorff envelopes, without computing a full multidimensional
-response partition. Large nuisance radii and loose covering bounds can leave the
-certificates uninformative. All specified conditions and solver warnings are retained.
+- Scalar coupled capacities: 120 instances, with forward-query budgets of
+  9, 33 and 129. At 129 shared queries, the original and adaptive bounds
+  detect 5 and 71 of the 113 positive-reference cases.
+- Balanced multidimensional capacities: 42 full-rank instances at three
+  query budgets with three timing repeats, plus 20 structured conditions
+  with three timing repeats, giving 438 timed runs.
+- Independent complete-region reference risks for twelve small capacity
+  instances, with separate forward-projection checks.
+- Rotated folded-ball and affine controls, with explicit structural upper
+  risks. These controls test separation values rather than adaptive
+  partitioning in general high-dimensional problems.
+- Smooth-response curvature, exact parabolic identities, and
+  Hamilton-Jacobi disk controls: 37 cases.
+- Planar recovery, two-branch geometry, fixed-fiber checks, target
+  classification, polygonal path realization, computational separation,
+  and anisotropic parameter controls.
 
-## Computational separation controls
+`reproduction/code/src/` contains the implementations, `tests/` the analytic
+and independent numerical controls, `experiments/` the drivers, and `notes/`
+the numerical protocols. Saved synthetic results are under
+`reproduction/code/results/`. The two complete balanced executions agree in
+scientific values; elapsed times and solver-warning counts can vary.
 
-```sh
-python -I experiments/consistency_separation.py --output example_complexity
-python -I experiments/exact_separation_controls.py --output results/example_complexity/exact_controls.json
-```
+All query setup, forward solves, anchor updates, upper-bound operations,
+conic checks and bookkeeping enter the balanced study's reported totals.
+The supplied solver warnings, residuals, duality gaps and numerical backoffs
+are retained. These are floating-point diagnostics, not interval validation.
+Zero detections are inconclusive. General capacity tests with three, four
+or eight latent directions are not presented as successful detections.
 
-The construction has an explicit mixed minimax center and risk. Selecting a
-consistent center reduces to a discrete choice among convex box projections,
-although every central candidate's worst error is evaluated by two fixed
-responses. The experiment checks 15 formulas against independent Boolean
-enumeration. Generated formulas use every variable and retain two or three
-independent source-kernel directions.
-
-A separate implementation imports only the standard library and enumerates
-box faces with rational arithmetic. It recovers the three analytic controls
-13/2, 125/36, and 649/72 exactly. Exhaustive enumeration is for small-instance
-verification; numerical primal-dual residuals are not interval certificates.
+The checks use package-local imports and do not require a parent project
+directory. Generated figures, numerical summaries and execution logs are
+excluded from Git tracking.

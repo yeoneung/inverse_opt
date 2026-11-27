@@ -1,0 +1,9 @@
+{
+  "rows": 438,
+  "capacity_rows": 378,
+  "structured_rows": 60,
+  "references": 12,
+  "failures": [],
+  "seconds": 121.43441620003432,
+  "warning_count": 3434
+}

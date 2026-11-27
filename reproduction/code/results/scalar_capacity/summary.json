@@ -1,0 +1,95 @@
+{
+  "summary": [
+    {
+      "dimension": 4,
+      "cases": 30,
+      "positive_penalties": 23,
+      "max_ratio": 1.9341393787431944,
+      "median_supplied_center_fraction": 0.5071261638068747,
+      "median_certificate_ms": 4.813449995708652,
+      "median_full_recovery_ms": 7.012849993770942,
+      "finite_query_detections": {
+        "9": 0,
+        "33": 0,
+        "129": 3
+      },
+      "median_adaptive_fraction": 0.7961611762979286,
+      "median_adaptive_ms": 18.721200001891702,
+      "maximum_adaptive_solves": 4,
+      "adaptive_finite_query_detections": {
+        "9": 0,
+        "33": 1,
+        "129": 6
+      }
+    },
+    {
+      "dimension": 8,
+      "cases": 30,
+      "positive_penalties": 30,
+      "max_ratio": 1.4900095250239818,
+      "median_supplied_center_fraction": 0.015360572820270108,
+      "median_certificate_ms": 4.845850002311636,
+      "median_full_recovery_ms": 11.638999996648636,
+      "finite_query_detections": {
+        "9": 0,
+        "33": 0,
+        "129": 2
+      },
+      "median_adaptive_fraction": 0.5984661975035328,
+      "median_adaptive_ms": 19.60214999417076,
+      "maximum_adaptive_solves": 5,
+      "adaptive_finite_query_detections": {
+        "9": 0,
+        "33": 3,
+        "129": 18
+      }
+    },
+    {
+      "dimension": 16,
+      "cases": 30,
+      "positive_penalties": 30,
+      "max_ratio": 1.454487336855295,
+      "median_supplied_center_fraction": 0.0024379162174140586,
+      "median_certificate_ms": 4.986749998352025,
+      "median_full_recovery_ms": 16.437949998362456,
+      "finite_query_detections": {
+        "9": 0,
+        "33": 0,
+        "129": 0
+      },
+      "median_adaptive_fraction": 0.4594550159589159,
+      "median_adaptive_ms": 25.16049999394454,
+      "maximum_adaptive_solves": 6,
+      "adaptive_finite_query_detections": {
+        "9": 0,
+        "33": 0,
+        "129": 22
+      }
+    },
+    {
+      "dimension": 32,
+      "cases": 30,
+      "positive_penalties": 30,
+      "max_ratio": 1.3794643520077556,
+      "median_supplied_center_fraction": 0.00021619083497009366,
+      "median_certificate_ms": 5.170750002434943,
+      "median_full_recovery_ms": 27.774600006523542,
+      "finite_query_detections": {
+        "9": 0,
+        "33": 0,
+        "129": 0
+      },
+      "median_adaptive_fraction": 0.4196122202038748,
+      "median_adaptive_ms": 31.67280000343453,
+      "maximum_adaptive_solves": 7,
+      "adaptive_finite_query_detections": {
+        "9": 0,
+        "33": 1,
+        "129": 25
+      }
+    }
+  ],
+  "failures": [],
+  "warning_count": 407,
+  "seconds": 39.64164710001205
+}

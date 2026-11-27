@@ -1,0 +1,86 @@
+{
+  "results": [
+    {
+      "target": "released",
+      "budget": 0.0,
+      "cases": 16,
+      "converged": 16,
+      "mean_ratio": 0.3684161575890963,
+      "minimum_ratio": 0.2668223813772046,
+      "maximum_ratio": 0.6062766475903442,
+      "maximum_gap": 1.7763568394002505e-15,
+      "maximum_iterations": 4,
+      "mean_ms": 3.198437567334622
+    },
+    {
+      "target": "released",
+      "budget": 0.01,
+      "cases": 16,
+      "converged": 16,
+      "mean_ratio": 0.5079617298469713,
+      "minimum_ratio": 0.3658767457046378,
+      "maximum_ratio": 0.7446977383983078,
+      "maximum_gap": 6.264557761426204e-08,
+      "maximum_iterations": 6,
+      "mean_ms": 20.33226256025955
+    },
+    {
+      "target": "released",
+      "budget": 0.1,
+      "cases": 16,
+      "converged": 16,
+      "mean_ratio": 0.7599554919131912,
+      "minimum_ratio": 0.6043688370989847,
+      "maximum_ratio": 0.9347937533517643,
+      "maximum_gap": 8.212132984741771e-08,
+      "maximum_iterations": 13,
+      "mean_ms": 27.778156276326627
+    },
+    {
+      "target": "switching",
+      "budget": 0.0,
+      "cases": 16,
+      "converged": 16,
+      "mean_ratio": 0.3049369020203957,
+      "minimum_ratio": 0.25,
+      "maximum_ratio": 0.49419643631972343,
+      "maximum_gap": 1.3877787807814457e-16,
+      "maximum_iterations": 3,
+      "mean_ms": 5.317543516866863
+    },
+    {
+      "target": "switching",
+      "budget": 0.01,
+      "cases": 16,
+      "converged": 16,
+      "mean_ratio": 0.3277354262532901,
+      "minimum_ratio": 0.25535102212399613,
+      "maximum_ratio": 0.46033365534970594,
+      "maximum_gap": 6.003216776462317e-08,
+      "maximum_iterations": 6,
+      "mean_ms": 39.1800373326987
+    },
+    {
+      "target": "switching",
+      "budget": 0.1,
+      "cases": 16,
+      "converged": 16,
+      "mean_ratio": 0.38305997349187193,
+      "minimum_ratio": 0.26863627920143496,
+      "maximum_ratio": 0.5206728322353541,
+      "maximum_gap": 7.984330957500063e-08,
+      "maximum_iterations": 9,
+      "mean_ms": 52.267337567172945
+    }
+  ],
+  "total_cases": 96,
+  "converged": 96,
+  "maximum_gap": 8.212132984741771e-08,
+  "maximum_grid_excess": 0.0,
+  "highdim_max_formula_difference": 6.550315845288424e-14,
+  "highdim_max_gap": 1.3322676295501878e-15,
+  "highdim_max_sample_excess": 0.0,
+  "first_run_converged": 88,
+  "first_refinement_converged": 95,
+  "interpretation": "Fixed synthetic optimization cases; no statistical learning comparison. All brackets are floating-point evaluations of exact-arithmetic bounds."
+}

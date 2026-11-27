@@ -1,0 +1,118 @@
+{
+  "reference": [
+    {
+      "p": 2,
+      "original_detections": 4,
+      "adaptive_detections": 4,
+      "captured_percent": 21.18969804543508,
+      "total_ms": 305.7580499444157,
+      "reference_ms": 332.47520006261766
+    },
+    {
+      "p": 3,
+      "original_detections": 0,
+      "adaptive_detections": 0,
+      "captured_percent": 0.0,
+      "total_ms": 344.4496499141678,
+      "reference_ms": 1864.5557499257848
+    }
+  ],
+  "scaling": [
+    {
+      "q": 8,
+      "p": 2,
+      "detections": [
+        0,
+        2,
+        6
+      ],
+      "original_ms": 295.1961000217125,
+      "adaptive_ms": 309.30689990054816
+    },
+    {
+      "q": 16,
+      "p": 4,
+      "detections": [
+        0,
+        0,
+        0
+      ],
+      "original_ms": 483.28854993451387,
+      "adaptive_ms": 503.11135000083596
+    },
+    {
+      "q": 32,
+      "p": 2,
+      "detections": [
+        0,
+        2,
+        6
+      ],
+      "original_ms": 422.4071999778971,
+      "adaptive_ms": 448.15700012259185
+    },
+    {
+      "q": 32,
+      "p": 4,
+      "detections": [
+        0,
+        0,
+        0
+      ],
+      "original_ms": 633.279150002636,
+      "adaptive_ms": 664.8817000677809
+    },
+    {
+      "q": 32,
+      "p": 8,
+      "detections": [
+        0,
+        0,
+        0
+      ],
+      "original_ms": 899.8412501532584,
+      "adaptive_ms": 929.7485999995843
+    }
+  ],
+  "structured": [
+    {
+      "p": 2,
+      "true_penalty": 0.25,
+      "lower": 0.06249998899999948,
+      "captured_percent": 24.999995599999792,
+      "total_ms": 24.414800107479095
+    },
+    {
+      "p": 4,
+      "true_penalty": 0.125,
+      "lower": 0.015624988999999423,
+      "captured_percent": 12.499991199999538,
+      "total_ms": 55.0025999546051
+    },
+    {
+      "p": 8,
+      "true_penalty": 0.0625,
+      "lower": 0.003906238999999201,
+      "captured_percent": 6.249982399998721,
+      "total_ms": 145.33265004865825
+    },
+    {
+      "p": 16,
+      "true_penalty": 0.03125,
+      "lower": 0.0009765514999976466,
+      "captured_percent": 3.124964799992469,
+      "total_ms": 497.3559498321265
+    },
+    {
+      "p": 32,
+      "true_penalty": 0.015625,
+      "lower": 0.00024412962499870128,
+      "captured_percent": 1.5624295999916882,
+      "total_ms": 2020.7125002052635
+    }
+  ],
+  "affine_box_fraction_in_successful_p2_runs": [
+    0.3254901960784313,
+    0.9058823529411765
+  ]
+}

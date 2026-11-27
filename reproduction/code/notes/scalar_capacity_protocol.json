@@ -1,0 +1,15 @@
+{
+  "purpose": "Compare the radius-adaptive normal-cone certificate with the original single-margin bound on new coupled-capacity cases.",
+  "status": "New validation seeds selected after the multiscale pilot; numerical study, no external preregistration asserted.",
+  "holdout_seed_base": 771100,
+  "seeds_per_dimension": 10,
+  "dimensions": [4, 8, 16, 32],
+  "capacity_factors": [0.6, 1.0, 1.6],
+  "parameter_interval": [0.0, 4.0],
+  "forward_query_counts": [9, 33, 129],
+  "positive_penalty_threshold": 0.0000001,
+  "positive_certificate_threshold": 0.000001,
+  "bound_violation_tolerance": 0.000002,
+  "algorithm_design_seed_base": 552000,
+  "retain_all_failures": true
+}

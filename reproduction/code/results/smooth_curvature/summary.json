@@ -1,0 +1,12 @@
+{
+  "smooth_cases": 4,
+  "exact_parabolic_cases": 9,
+  "disk_cases": 12,
+  "fixed_interval_cases": 12,
+  "total_cases": 37,
+  "max_sample_minimax_disagreement": 5.663559898838599e-12,
+  "smallest_radius": 0.0125,
+  "smallest_radius_scaled_penalty": 0.4899754979322097,
+  "predicted_smooth_coefficient": 0.48999999999999994,
+  "rational_energy_identities": true
+}

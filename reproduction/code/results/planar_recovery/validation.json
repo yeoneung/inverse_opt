@@ -1,0 +1,118 @@
+{
+  "date": "2026-11-08",
+  "tests": {
+    "count": 80,
+    "passed": true,
+    "seconds": 7.220398699864745
+  },
+  "planar": {
+    "cases": 96,
+    "converged": 96,
+    "maximum_squared_gap": 8.212132984741771e-08,
+    "maximum_grid_excess": 0.0
+  },
+  "highdim": {
+    "cases": 16,
+    "dimensions": [
+      3,
+      6,
+      12,
+      24
+    ],
+    "maximum_formula_difference": 6.550315845288424e-14
+  },
+  "mixture": {
+    "phase_cases": 77,
+    "projection_realizations": 576,
+    "optimization_cases": 34,
+    "phase_mixed_error": 1.5543122344752192e-15,
+    "phase_single_error": 4.333224390418167e-09,
+    "embedding_error": 1.0619965218847554e-14,
+    "max_single_squared_gap": 1.2657284231831767e-07,
+    "max_grid_excess": 1.1102230246251565e-16,
+    "max_bound_inversion": 0.0,
+    "max_raw_bound_inversion": 1.619385719964228e-08,
+    "max_source_loss_excess": 3.9418537010893484e-11,
+    "inaccurate_subproblems": 17,
+    "solver_retries": 0,
+    "persistence_predictions": 11,
+    "persistence_violations": [],
+    "persistence_bracket_confirmations": [
+      "budget_0",
+      "budget_0.0001",
+      "budget_0.0005",
+      "budget_0.001",
+      "budget_0.002",
+      "perturb_0_0",
+      "perturb_0_0.005",
+      "perturb_0.005_0",
+      "perturb_0.005_0.005",
+      "perturb_0.03_0",
+      "perturb_0.03_0.005"
+    ],
+    "persistence_check_tolerance": 2e-06,
+    "groups": [
+      {
+        "group": "budget",
+        "cases": 9,
+        "converged": 9,
+        "minimum_ratio": 0.9999996931199531,
+        "maximum_ratio": 2.3703703703703707,
+        "predicted_gains": 5,
+        "numerical_gains": 7,
+        "mean_single_seconds": 0.1377839000067777
+      },
+      {
+        "group": "perturbation",
+        "cases": 9,
+        "converged": 9,
+        "minimum_ratio": 2.174204663468693,
+        "maximum_ratio": 2.3703703703703787,
+        "predicted_gains": 6,
+        "numerical_gains": 9,
+        "mean_single_seconds": 0.0858979443502095
+      },
+      {
+        "group": "released",
+        "cases": 8,
+        "converged": 8,
+        "minimum_ratio": 0.9999996316063274,
+        "maximum_ratio": 1.0000000003736447,
+        "predicted_gains": 0,
+        "numerical_gains": 0,
+        "mean_single_seconds": 0.15300612477585673
+      },
+      {
+        "group": "switching",
+        "cases": 8,
+        "converged": 8,
+        "minimum_ratio": 0.9999978673518484,
+        "maximum_ratio": 1.3307497456045334,
+        "predicted_gains": 0,
+        "numerical_gains": 7,
+        "mean_single_seconds": 0.4154555998975411
+      }
+    ],
+    "critical_budget": 0.002274757302284111,
+    "scope": "Fixed synthetic checks. Projection embeddings retain one-dimensional source ambiguity. Floating-point values are not interval-certified."
+  },
+  "protocols": {
+    "planar_recovery_protocol.json": "ca00fd29bd18a05f81c5c2bf448e452cc01beaa0ceb2b4d67b9faa41bd10eaf7",
+    "historical_highdim_protocol.json": "d2882ae683a2ecae5245a5a87d3cd3e2f1b91d8a7dd2c6554757d86a08700825",
+    "mixture_study_protocol.json": "8817834b0310e98d8b3b595b0cdd63fe29047f2ed4524b6cf2b854d4b7ffc211"
+  },
+  "legacy_manifest": {
+    "hashes": 231,
+    "mismatches": 0
+  },
+  "manuscript": {
+    "pages": 23,
+    "abstract_words": 167,
+    "unresolved_references": false,
+    "bibliography_errors": false,
+    "layout_diagnostics": [
+      "Overfull \\hbox (0.37035pt too wide) detected at line 26"
+    ]
+  },
+  "scope": "Internal checks and floating-point diagnostics; no independent proof audit, external replication or interval arithmetic."
+}

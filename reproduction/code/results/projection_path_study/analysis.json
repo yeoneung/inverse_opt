@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "cases": 8,
+  "exact_arbitrary_chains": 13,
+  "maximum_projection_error": 1.9540135401921843e-11,
+  "maximum_ratio_lower": 3.992641013427133
+}

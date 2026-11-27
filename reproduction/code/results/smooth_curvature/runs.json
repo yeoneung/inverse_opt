@@ -1,0 +1,486 @@
+{
+  "smooth_curve": [
+    {
+      "radius": 0.1,
+      "mixed_risk": 0.010000090000000001,
+      "single_risk": 0.010048932355150284,
+      "penalty": 4.8842355150283305e-05,
+      "mixed_center": [
+        0.0040000000000000036,
+        0.007000000000000001
+      ],
+      "single_center": [
+        0.004020966097399313,
+        1.1300866896391167e-05
+      ],
+      "parameter": 0.0040145195505107405,
+      "regime_margin_lower": 0.250890554557341,
+      "balance_residual": 9.867933835512599e-20,
+      "scaled_penalty": 0.48842355150283295,
+      "predicted_coefficient": 0.48999999999999994,
+      "sample_minimax_disagreement": 5.663559898838599e-12
+    },
+    {
+      "radius": 0.05,
+      "mixed_risk": 0.0025000014062500006,
+      "single_risk": 0.002503061452943481,
+      "penalty": 3.0600466934803543e-06,
+      "mixed_center": [
+        0.0010000000000000009,
+        0.0017500000000000003
+      ],
+      "single_center": [
+        0.0010013119738171428,
+        7.015771444093274e-07
+      ],
+      "parameter": 0.0010009112444894046,
+      "regime_margin_lower": 0.6522638368707112,
+      "balance_residual": 9.158543742187122e-21,
+      "scaled_penalty": 0.4896074709568566,
+      "predicted_coefficient": 0.48999999999999994,
+      "sample_minimax_disagreement": 2.716052209528197e-13
+    },
+    {
+      "radius": 0.025,
+      "mixed_risk": 0.0006250000219726563,
+      "single_risk": 0.0006251913899284841,
+      "penalty": 1.913679558278249e-07,
+      "mixed_center": [
+        0.0002500000000000002,
+        0.00043750000000000006
+      ],
+      "single_center": [
+        0.00025008202304224915,
+        4.377464705638237e-08
+      ],
+      "parameter": 0.0002500570116386213,
+      "regime_margin_lower": 0.8325378790093606,
+      "balance_residual": 1.187897534075152e-19,
+      "scaled_penalty": 0.48990196691923166,
+      "predicted_coefficient": 0.48999999999999994,
+      "sample_minimax_disagreement": 8.411283822229443e-14
+    },
+    {
+      "radius": 0.0125,
+      "mixed_risk": 0.00015625000034332279,
+      "single_risk": 0.00015626196263575278,
+      "penalty": 1.196229242998559e-08,
+      "mixed_center": [
+        6.250000000000006e-05,
+        0.00010937500000000002
+      ],
+      "single_center": [
+        6.250512682493316e-05,
+        2.734760126448682e-09
+      ],
+      "parameter": 6.250356414672075e-05,
+      "regime_margin_lower": 0.9178347558654936,
+      "balance_residual": 1.430763965775315e-22,
+      "scaled_penalty": 0.4899754979322097,
+      "predicted_coefficient": 0.48999999999999994,
+      "sample_minimax_disagreement": 4.263787673625119e-15
+    }
+  ],
+  "parabolic_controls": [
+    {
+      "curvature": "1/2",
+      "endpoint": "1/5",
+      "radius": "201/1000",
+      "mixed_risk": "1/25",
+      "single_risk": "401/10000",
+      "penalty": "1/10000",
+      "hj_energy": "101/2000000",
+      "energy_identity": true,
+      "scaled_penalty": 0.061265470106331446,
+      "predicted_coefficient": 0.0625
+    },
+    {
+      "curvature": "1/2",
+      "endpoint": "1/10",
+      "radius": "801/8000",
+      "mixed_risk": "1/100",
+      "single_risk": "1601/160000",
+      "penalty": "1/160000",
+      "hj_energy": "401/128000000",
+      "energy_identity": true,
+      "scaled_penalty": 0.062188474126423664,
+      "predicted_coefficient": 0.0625
+    },
+    {
+      "curvature": "1/2",
+      "endpoint": "1/20",
+      "radius": "3201/64000",
+      "mixed_risk": "1/400",
+      "single_risk": "6401/2560000",
+      "penalty": "1/2560000",
+      "hj_energy": "1601/8192000000",
+      "energy_identity": true,
+      "scaled_penalty": 0.06242193599703013,
+      "predicted_coefficient": 0.0625
+    },
+    {
+      "curvature": "1",
+      "endpoint": "1/5",
+      "radius": "51/250",
+      "mixed_risk": "1/25",
+      "single_risk": "101/2500",
+      "penalty": "1/2500",
+      "hj_energy": "13/62500",
+      "energy_identity": true,
+      "scaled_penalty": 0.23096135650662855,
+      "predicted_coefficient": 0.25
+    },
+    {
+      "curvature": "1",
+      "endpoint": "1/10",
+      "radius": "201/2000",
+      "mixed_risk": "1/100",
+      "single_risk": "401/40000",
+      "penalty": "1/40000",
+      "hj_energy": "101/8000000",
+      "energy_identity": true,
+      "scaled_penalty": 0.24506188042532578,
+      "predicted_coefficient": 0.25
+    },
+    {
+      "curvature": "1",
+      "endpoint": "1/20",
+      "radius": "801/16000",
+      "mixed_risk": "1/400",
+      "single_risk": "1601/640000",
+      "penalty": "1/640000",
+      "hj_energy": "401/512000000",
+      "energy_identity": true,
+      "scaled_penalty": 0.24875389650569465,
+      "predicted_coefficient": 0.25
+    },
+    {
+      "curvature": "2",
+      "endpoint": "1/5",
+      "radius": "27/125",
+      "mixed_risk": "1/25",
+      "single_risk": "26/625",
+      "penalty": "1/625",
+      "hj_energy": "29/31250",
+      "energy_identity": true,
+      "scaled_penalty": 0.7350298527964534,
+      "predicted_coefficient": 1.0
+    },
+    {
+      "curvature": "2",
+      "endpoint": "1/10",
+      "radius": "51/500",
+      "mixed_risk": "1/100",
+      "single_risk": "101/10000",
+      "penalty": "1/10000",
+      "hj_energy": "13/250000",
+      "energy_identity": true,
+      "scaled_penalty": 0.9238454260265142,
+      "predicted_coefficient": 1.0
+    },
+    {
+      "curvature": "2",
+      "endpoint": "1/20",
+      "radius": "201/4000",
+      "mixed_risk": "1/400",
+      "single_risk": "401/160000",
+      "penalty": "1/160000",
+      "hj_energy": "101/32000000",
+      "energy_identity": true,
+      "scaled_penalty": 0.9802475217013031,
+      "predicted_coefficient": 1.0
+    }
+  ],
+  "disk_controls": [
+    {
+      "height": 1.25,
+      "radius": 0.1,
+      "mixed_risk": 0.006359300476947538,
+      "single_risk": 0.006369442927750004,
+      "penalty": 1.0142450802466136e-05,
+      "predicted_coefficient": 0.1024,
+      "scaled_penalty": 0.10142450802466134
+    },
+    {
+      "height": 1.25,
+      "radius": 0.05,
+      "mixed_risk": 0.0015974440894568692,
+      "single_risk": 0.0015980825564211537,
+      "penalty": 6.384669642843925e-07,
+      "predicted_coefficient": 0.1024,
+      "scaled_penalty": 0.10215471428550278
+    },
+    {
+      "height": 1.25,
+      "radius": 0.025,
+      "mixed_risk": 0.00039984006397441034,
+      "single_risk": 0.00039988003998600515,
+      "penalty": 3.997601159480227e-08,
+      "predicted_coefficient": 0.1024,
+      "scaled_penalty": 0.1023385896826938
+    },
+    {
+      "height": 1.25,
+      "radius": 0.0125,
+      "mixed_risk": 9.999000099990004e-05,
+      "single_risk": 9.999250062494534e-05,
+      "penalty": 2.4996250453074235e-09,
+      "predicted_coefficient": 0.1024,
+      "scaled_penalty": 0.10238464185579205
+    },
+    {
+      "height": 2.0,
+      "radius": 0.1,
+      "mixed_risk": 0.0024937655860349127,
+      "single_risk": 0.0024953222443106506,
+      "penalty": 1.5566582757378856e-06,
+      "predicted_coefficient": 0.015625,
+      "scaled_penalty": 0.015566582757378853
+    },
+    {
+      "height": 2.0,
+      "radius": 0.05,
+      "mixed_risk": 0.0006246096189881324,
+      "single_risk": 0.0006247071837544911,
+      "penalty": 9.756476635861687e-08,
+      "predicted_coefficient": 0.015625,
+      "scaled_penalty": 0.015610362617378698
+    },
+    {
+      "height": 2.0,
+      "radius": 0.025,
+      "mixed_risk": 0.00015622558975160133,
+      "single_risk": 0.00015623169183698487,
+      "penalty": 6.102085383561651e-09,
+      "predicted_coefficient": 0.015625,
+      "scaled_penalty": 0.015621338581917825
+    },
+    {
+      "height": 2.0,
+      "radius": 0.0125,
+      "mixed_risk": 3.906097418069608e-05,
+      "single_risk": 3.906135562807196e-05,
+      "penalty": 3.814473758756772e-10,
+      "predicted_coefficient": 0.015625,
+      "scaled_penalty": 0.015624084515867734
+    },
+    {
+      "height": 3.0,
+      "radius": 0.1,
+      "mixed_risk": 0.001109877913429523,
+      "single_risk": 0.0011101860416913144,
+      "penalty": 3.0812826179155725e-07,
+      "predicted_coefficient": 0.0030864197530864196,
+      "scaled_penalty": 0.003081282617915572
+    },
+    {
+      "height": 3.0,
+      "radius": 0.05,
+      "mixed_risk": 0.0002777006387114691,
+      "single_risk": 0.0002777199208000714,
+      "penalty": 1.928208860229948e-08,
+      "predicted_coefficient": 0.0030864197530864196,
+      "scaled_penalty": 0.0030851341763679166
+    },
+    {
+      "height": 3.0,
+      "radius": 0.025,
+      "mixed_risk": 6.943962224845499e-05,
+      "single_risk": 6.944082775559483e-05,
+      "penalty": 1.2055071398455474e-09,
+      "predicted_coefficient": 0.0030864197530864196,
+      "scaled_penalty": 0.003086098278004601
+    },
+    {
+      "height": 3.0,
+      "radius": 0.0125,
+      "mixed_risk": 1.736080970816479e-05,
+      "single_risk": 1.7360885058247292e-05,
+      "penalty": 7.535008250141852e-11,
+      "predicted_coefficient": 0.0030864197530864196,
+      "scaled_penalty": 0.003086339379258102
+    }
+  ],
+  "fixed_interval_controls": [
+    {
+      "radius": 0.2,
+      "curvature": 0.0,
+      "compatible_interval": [
+        -0.2,
+        0.2
+      ],
+      "endpoint": 0.2,
+      "mixed_risk": 0.04000000000000001,
+      "single_risk": 0.04000000000000001,
+      "penalty": 0.0,
+      "hj_energy": 0.0,
+      "scaled_penalty": 0.0,
+      "predicted_coefficient": 0.0
+    },
+    {
+      "radius": 0.2,
+      "curvature": 0.5,
+      "compatible_interval": [
+        -0.2,
+        0.2
+      ],
+      "endpoint": 0.19901470670871968,
+      "mixed_risk": 0.039606853486357715,
+      "single_risk": 0.03970489741405083,
+      "penalty": 9.804392769311289e-05,
+      "hj_energy": 4.950736528147746e-05,
+      "scaled_penalty": 0.06127745480819555,
+      "predicted_coefficient": 0.0625
+    },
+    {
+      "radius": 0.2,
+      "curvature": 1.0,
+      "compatible_interval": [
+        -0.2,
+        0.2
+      ],
+      "endpoint": 0.19622240177275713,
+      "mixed_risk": 0.03850323095746932,
+      "single_risk": 0.03887385565601038,
+      "penalty": 0.00037062469854105595,
+      "hj_energy": 0.00019244747345376227,
+      "scaled_penalty": 0.23164043658815991,
+      "predicted_coefficient": 0.25
+    },
+    {
+      "radius": 0.2,
+      "curvature": 2.0,
+      "compatible_interval": [
+        -0.2,
+        0.2
+      ],
+      "endpoint": 0.18693518779535268,
+      "mixed_risk": 0.03494476443608377,
+      "single_risk": 0.036165900997577154,
+      "penalty": 0.0012211365614933853,
+      "hj_energy": 0.0006959129397180436,
+      "scaled_penalty": 0.7632103509333656,
+      "predicted_coefficient": 1.0
+    },
+    {
+      "radius": 0.1,
+      "curvature": 0.0,
+      "compatible_interval": [
+        -0.1,
+        0.1
+      ],
+      "endpoint": 0.1,
+      "mixed_risk": 0.010000000000000002,
+      "single_risk": 0.010000000000000002,
+      "penalty": 0.0,
+      "hj_energy": 0.0,
+      "scaled_penalty": 0.0,
+      "predicted_coefficient": 0.0
+    },
+    {
+      "radius": 0.1,
+      "curvature": 0.5,
+      "compatible_interval": [
+        -0.1,
+        0.1
+      ],
+      "endpoint": 0.09987546641959497,
+      "mixed_risk": 0.009975108792531641,
+      "single_risk": 0.009981327717245568,
+      "penalty": 6.218924713927629e-06,
+      "hj_energy": 3.1172166632880636e-06,
+      "scaled_penalty": 0.06218924713927628,
+      "predicted_coefficient": 0.0625
+    },
+    {
+      "radius": 0.1,
+      "curvature": 1.0,
+      "compatible_interval": [
+        -0.1,
+        0.1
+      ],
+      "endpoint": 0.09950735335435984,
+      "mixed_risk": 0.009901713371589429,
+      "single_risk": 0.009926224353512708,
+      "penalty": 2.4510981923278223e-05,
+      "hj_energy": 1.2376841320369365e-05,
+      "scaled_penalty": 0.2451098192327822,
+      "predicted_coefficient": 0.25
+    },
+    {
+      "radius": 0.1,
+      "curvature": 2.0,
+      "compatible_interval": [
+        -0.1,
+        0.1
+      ],
+      "endpoint": 0.09811120088637856,
+      "mixed_risk": 0.00962580773936733,
+      "single_risk": 0.009718463914002594,
+      "penalty": 9.265617463526399e-05,
+      "hj_energy": 4.811186836344057e-05,
+      "scaled_penalty": 0.9265617463526397,
+      "predicted_coefficient": 1.0
+    },
+    {
+      "radius": 0.05,
+      "curvature": 0.0,
+      "compatible_interval": [
+        -0.05,
+        0.05
+      ],
+      "endpoint": 0.05,
+      "mixed_risk": 0.0025000000000000005,
+      "single_risk": 0.0025000000000000005,
+      "penalty": 0.0,
+      "hj_energy": 0.0,
+      "scaled_penalty": 0.0,
+      "predicted_coefficient": 0.0
+    },
+    {
+      "radius": 0.05,
+      "curvature": 0.5,
+      "compatible_interval": [
+        -0.05,
+        0.05
+      ],
+      "endpoint": 0.04998438963015314,
+      "mixed_risk": 0.0024984392066989608,
+      "single_risk": 0.002498829344103309,
+      "penalty": 3.901374043481583e-07,
+      "hj_energy": 1.9519054399745705e-07,
+      "scaled_penalty": 0.06242198469570532,
+      "predicted_coefficient": 0.0625
+    },
+    {
+      "radius": 0.05,
+      "curvature": 1.0,
+      "compatible_interval": [
+        -0.05,
+        0.05
+      ],
+      "endpoint": 0.04993773320979748,
+      "mixed_risk": 0.0024937771981329102,
+      "single_risk": 0.002495331929311392,
+      "penalty": 1.5547311784819073e-06,
+      "hj_energy": 7.793041658220159e-07,
+      "scaled_penalty": 0.24875698855710512,
+      "predicted_coefficient": 0.25
+    },
+    {
+      "radius": 0.05,
+      "curvature": 2.0,
+      "compatible_interval": [
+        -0.05,
+        0.05
+      ],
+      "endpoint": 0.04975367667717992,
+      "mixed_risk": 0.002475428342897357,
+      "single_risk": 0.002481556088378177,
+      "penalty": 6.127745480819556e-06,
+      "hj_energy": 3.0942103300923414e-06,
+      "scaled_penalty": 0.9804392769311288,
+      "predicted_coefficient": 1.0
+    }
+  ]
+}

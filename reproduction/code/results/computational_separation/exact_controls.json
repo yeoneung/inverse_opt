@@ -1,0 +1,78 @@
+[
+  {
+    "name": "single_clause",
+    "matrix": [
+      [
+        1,
+        1,
+        1,
+        1
+      ]
+    ],
+    "proper_risk": "13/2",
+    "parameter": [
+      "1/4",
+      "-1/4",
+      "-1/4",
+      "1/4"
+    ],
+    "passed": true
+  },
+  {
+    "name": "repeated_unsatisfiable",
+    "matrix": [
+      [
+        1,
+        3
+      ]
+    ],
+    "proper_risk": "125/36",
+    "parameter": [
+      "1/4",
+      "-1/12"
+    ],
+    "passed": true
+  },
+  {
+    "name": "distinct_unsatisfiable",
+    "matrix": [
+      [
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        0,
+        1,
+        1,
+        1
+      ]
+    ],
+    "proper_risk": "649/72",
+    "parameter": [
+      "1/4",
+      "-1/12",
+      "-1/12",
+      "-1/12",
+      "-1/12"
+    ],
+    "passed": true
+  }
+]

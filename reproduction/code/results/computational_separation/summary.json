@@ -1,0 +1,16 @@
+{
+  "instances": 15,
+  "satisfiable": 11,
+  "unsatisfiable": 4,
+  "all_labels_agree": true,
+  "max_risk_primal_dual_gap": 1.928288639874154e-10,
+  "max_equality_residual": 7.997297268858006e-12,
+  "max_box_violation": 2.052996661561224e-11,
+  "min_unsatisfiable_excess": 0.22222222221860566,
+  "max_satisfiable_excess": 1.1241318986776605e-10,
+  "random_source_nullities": [
+    2,
+    3
+  ],
+  "scope": "Exhaustive small-instance verification, not empirical worst-case complexity estimation."
+}

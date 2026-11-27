@@ -1,0 +1,19 @@
+{
+  "protocol_sha256": "df7bed25824c0ead2d0a8d4ed973e6bc5e3eb45811905e7d12b92aa07b11297f",
+  "cases": 8,
+  "exact_arbitrary_chains": 13,
+  "seconds": 0.26922299999569077,
+  "python": "3.12.10",
+  "cvxpy": "1.7.2",
+  "solver_warning_count": 8,
+  "solver_warnings": [
+    "Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.",
+    "Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.",
+    "Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.",
+    "Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.",
+    "Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.",
+    "Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.",
+    "Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.",
+    "Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information."
+  ]
+}

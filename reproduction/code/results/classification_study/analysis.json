@@ -1,0 +1,13 @@
+{
+  "facet_cases": 96,
+  "information_cases": 15,
+  "max_facet_projection_error": 1.8198598777333905e-06,
+  "max_facet_risk_error": 6.452802202572272e-07,
+  "max_monotonicity_error": 8.78307426788183e-11,
+  "max_information_error": 2.2668977806006296e-11,
+  "every_facet_has_strict_gap": true,
+  "every_facet_has_information_reversal": true,
+  "every_information_case_reverses_proper_monotonicity": true,
+  "scope": "Constructed polyhedral QP/SOCP checks; not interval-validated or external replication.",
+  "passed": true
+}

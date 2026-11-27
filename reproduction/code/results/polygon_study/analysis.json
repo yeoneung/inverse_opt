@@ -1,0 +1,7 @@
+{
+  "cases": 2,
+  "passed": true,
+  "maximum_projection_error": 2.60133570547882e-15,
+  "maximum_conic_error": 1.6290968574139697e-11,
+  "maximum_ratio": 3.0263738323734746
+}
