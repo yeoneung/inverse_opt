@@ -25,6 +25,12 @@ experiments/report_jogo.py generates the compact balanced-study results,
 the computational-design appendix and the separate folded-ball controls
 from the complete raw runs. Every condition and all table values are
 retained. Its legacy data calculations are unchanged.
+experiments/render_submission_figures.py redraws all five figures from
+the same saved values at a readable column width, with labeled panels,
+9--10 point text and embedded vector fonts. Run:
+  python -I code/experiments/render_submission_figures.py
+The publication_math_style helper applies exact notation-only replacements
+to the generated mathematical text; it performs no numerical calculations.
 verification/balanced_table_values.json records the numerical table values.
 
 GLOBAL REFERENCES

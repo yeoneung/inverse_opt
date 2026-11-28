@@ -1,0 +1,108 @@
+{
+  "folded_controls.tex": [
+    {
+      "before": "$0,\\pm e_j$",
+      "after": "$0,\\pm \\boldsymbol{e}_j$"
+    },
+    {
+      "before": "$a$",
+      "after": "$\\boldsymbol{a}$"
+    },
+    {
+      "before": "$\\|u\\|\\le1$",
+      "after": "$\\|\\boldsymbol{u}\\|\\le1$"
+    },
+    {
+      "before": "\\[\n \\|\\Phi(u)-a\\|^2\\le\\|a\\|^2+\\max\\{0,1-2\\min_i a_i\\}.\n\\]",
+      "after": "\\[\n \\|\\Phi(\\boldsymbol{u})-\\boldsymbol{a}\\|^2\\le\\|\\boldsymbol{a}\\|^2+\\max\\{0,1-2\\min_i a_i\\}.\n\\]"
+    },
+    {
+      "before": "$a^\\top\\Phi(u)\\ge(\\min_i a_i)\\|u\\|_1\n\\ge(\\min_i a_i)\\|u\\|$",
+      "after": "$\\boldsymbol{a}^\\top\\Phi(\\boldsymbol{u})\\ge(\\min_i a_i)\\|\\boldsymbol{u}\\|_1\n\\ge(\\min_i a_i)\\|\\boldsymbol{u}\\|$"
+    }
+  ],
+  "smooth_curvature_experiment.tex": [
+    {
+      "before": "$U_X(z,1)=(\\norm z-1)^2/2$",
+      "after": "$U_X(\\boldsymbol{z},1)=(\\norm {\\boldsymbol{z}}-1)^2/2$"
+    }
+  ],
+  "appendix_computational_details.tex": [
+    {
+      "before": "$d$",
+      "after": "$\\boldsymbol{d}$"
+    },
+    {
+      "before": "$y^{\\rm src}=0.3\\mathbf1_{\\{d>0\\}}$",
+      "after": "$\\boldsymbol{y}^{\\rm src}=0.3\\mathbf1_{\\{\\boldsymbol{d}>0\\}}$"
+    },
+    {
+      "before": "$\\proj_{[0,0.3]^q}(y^{\\rm src}+td)$",
+      "after": "$\\proj_{[0,0.3]^q}(\\boldsymbol{y}^{\\rm src}+t\\boldsymbol{d})$"
+    },
+    {
+      "before": "$y^{\\rm src}$",
+      "after": "$\\boldsymbol{y}^{\\rm src}$"
+    },
+    {
+      "before": "\\[\n \\Phi(t)=\\proj_{\\mathcal X}(c+td),\\qquad\n \\mathcal X=\\{x:0\\le x\\le\\bar x,\\ A_{\\rm cap}x\\le b_{\\rm cap}\\}.\n\\]",
+      "after": "\\[\n \\Phi(t)=\\proj_{\\mathcal X}(\\boldsymbol{c}+t\\boldsymbol{d}),\\qquad\n \\mathcal X=\\{\\boldsymbol{x}:0\\le \\boldsymbol{x}\\le\\boldsymbol{\\bar x},\\ \\boldsymbol{A}_{\\rm cap}\\boldsymbol{x}\\le \\boldsymbol{b}_{\\rm cap}\\}.\n\\]"
+    },
+    {
+      "before": "$c=y^{\\rm src}+0.25\\zeta^{\\rm ctx}$",
+      "after": "$\\boldsymbol{c}=\\boldsymbol{y}^{\\rm src}+0.25\\boldsymbol{\\zeta}^{\\rm ctx}$"
+    },
+    {
+      "before": "$\\zeta^{\\rm ctx}$",
+      "after": "$\\boldsymbol{\\zeta}^{\\rm ctx}$"
+    },
+    {
+      "before": "$A_{\\rm cap}$",
+      "after": "$\\boldsymbol{A}_{\\rm cap}$"
+    },
+    {
+      "before": "$\\bar x$",
+      "after": "$\\boldsymbol{\\bar x}$"
+    },
+    {
+      "before": "$b_{\\rm cap}=A_{\\rm cap}u^{\\rm cap}$",
+      "after": "$\\boldsymbol{b}_{\\rm cap}=\\boldsymbol{A}_{\\rm cap}\\boldsymbol{u}^{\\rm cap}$"
+    },
+    {
+      "before": "$u^{\\rm cap}$",
+      "after": "$\\boldsymbol{u}^{\\rm cap}$"
+    },
+    {
+      "before": "$\\Phi(v)=\\proj_{\\mathcal X}(c+Gv)$",
+      "after": "$\\Phi(\\boldsymbol{v})=\\proj_{\\mathcal X}(\\boldsymbol{c}+\\boldsymbol{G}\\boldsymbol{v})$"
+    },
+    {
+      "before": "$G=0.75Q_p$",
+      "after": "$\\boldsymbol{G}=0.75\\boldsymbol{Q}_p$"
+    },
+    {
+      "before": "$Q_p$",
+      "after": "$\\boldsymbol{Q}_p$"
+    },
+    {
+      "before": "$y^{\\rm src}=0.3\\mathbf1_q$",
+      "after": "$\\boldsymbol{y}^{\\rm src}=0.3\\mathbf1_q$"
+    },
+    {
+      "before": "$c^{\\rm src}=y^{\\rm src}+|G|\\mathbf1_p$",
+      "after": "$\\boldsymbol{c}^{\\rm src}=\\boldsymbol{y}^{\\rm src}+|\\boldsymbol{G}|\\mathbf1_p$"
+    },
+    {
+      "before": "$|G|$",
+      "after": "$|\\boldsymbol{G}|$"
+    },
+    {
+      "before": "$c^{\\rm src}+Gv\\ge y^{\\rm src}$",
+      "after": "$\\boldsymbol{c}^{\\rm src}+\\boldsymbol{G}\\boldsymbol{v}\\ge \\boldsymbol{y}^{\\rm src}$"
+    },
+    {
+      "before": "$v\\in V$",
+      "after": "$\\boldsymbol{v}\\in V$"
+    }
+  ]
+}

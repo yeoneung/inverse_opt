@@ -1,8 +1,12 @@
 """Render the added curvature study from stored data into a separate check folder."""
 import json
+import importlib.util
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+style_spec = importlib.util.spec_from_file_location('publication_style', Path(__file__).with_name('publication_math_style.py'))
+style = importlib.util.module_from_spec(style_spec)
+style_spec.loader.exec_module(style)
 
 
 def render():
@@ -66,7 +70,7 @@ curved target has positive penalty. These calculations check a local
 mechanism for scalar ambiguity; extension to multidimensional classes and feedback
 regularity through constraint switches remains open.
 '''
-    return text.replace('ROWS', rows)
+    return style.apply(text.replace('ROWS', rows), 'smooth_curvature_experiment.tex')
 
 
 def main():
