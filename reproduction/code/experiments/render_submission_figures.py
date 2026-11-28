@@ -427,8 +427,8 @@ def figure5():
     axes[2].grid(axis="x", alpha=0.16)
     # These two previously displayed summary values are retained as a compact
     # annotation; the exact intervals are recorded below and are not rounded.
-    axes[2].text(0.03, 0.03, "Risk ratio: 1.01345\nCertified excess captured: 43.18%",
-                 transform=axes[2].transAxes, fontsize=9, va="bottom")
+    axes[2].text(0.5, 0.5, "Risk ratio: 1.01345\nCertified excess captured: 43.18%",
+                 transform=axes[2].transAxes, fontsize=9, ha="center", va="center")
     for ax, name in zip(axes, "abc"):
         panel(ax, name)
     handles, labels = axes[0].get_legend_handles_labels()
