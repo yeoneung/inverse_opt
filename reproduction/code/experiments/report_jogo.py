@@ -213,7 +213,7 @@ Separate Gurobi and SCIP 10.0.2 formulations \citep{achterberg2009}
 were checked against complete-region reference
 risks on twelve small instances. Final independent forward-QP and conic
 checks cover all 27 new capacity and battery cases and 92 sampled
-anchors. The reported bounds use the reconstructed witnesses and the
+centers. The reported bounds use the reconstructed witnesses and the
 conservative anchor correction in Appendix~\ref{sec:global-solver-details}.
 The current SCIP release is documented by Hojny et al. (\emph{The SCIP
 Optimization Suite 10.0}, 2025 technical report,
