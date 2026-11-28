@@ -1,5 +1,5 @@
 {
-  "code/README.txt": "d7a3895191b41df875c6e59a9ad038d713c6409bbade7107b5c2c93638fce9d9",
+  "code/README.txt": "0a28d16f801671a25ff3cf0152c48bcc40b5a49e5121cc291fababadd33e05b1",
   "code/environment-lock.txt": "f860ab68645ee59d49d41456b4a8afe8f6481cda51d4a6b63d19b24c8bc5de6b",
   "code/experiments/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "code/experiments/anisotropic_controls.py": "173c8b2b7dc4e666f2374a65f2c20c9be3512c1dcba7ec4eeaa8fc95130f66e6",
@@ -14,7 +14,7 @@
   "code/experiments/projection_path_study.py": "9165582ceb7a90323c37e674aff2d263a6fd23a4c7c6c006af65b89181077ab5",
   "code/experiments/report_balanced_base.py": "6164cf61be98d7ce7111beb8ee2359e0f97b3d065ad7f87a243f60f7a3928298",
   "code/experiments/report_consistency_separation.py": "81d863f0ba914e64ba8bbe405f99c9911310342f874656a3f61182c8d34421ec",
-  "code/experiments/report_jogo.py": "db0cd178a4cc4049b2cef0295cff1181df9eb393668d45f47b64ce59b0c2d032",
+  "code/experiments/report_jogo.py": "e64b9577f5b37cfa10a5ac9b969014bcbdd9665c91572a9b322fa6049b5dc720",
   "code/experiments/report_multidimensional.py": "5319cc0464a267982d6bb45e9950dadc44102fe7fe50b73d0dc81745fb12e149",
   "code/experiments/report_scalar_studies.py": "3e7d1cdbb04db8c12671a9a49573e77a3e1c52c9728e7d086b91de4e2ddcb17f",
   "code/experiments/report_smooth_curvature.py": "7ff2a2d21c85f05ef1e7e199a41b99835695cb89167f71917a1e6c4764f29e76",

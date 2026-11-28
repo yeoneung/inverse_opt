@@ -117,3 +117,15 @@ histories and independent anchor checks, without adding a timed ablation:
 ```sh
 python -I reproduction/code/global_study/report_exchange_stages.py
 ```
+
+
+## Render numerical reports
+
+```sh
+python -I reproduction/code/experiments/report_jogo.py
+```
+
+The renderer separates compact numerical results from detailed computational
+settings and checks, and retains the folded-ball control report. All three
+outputs use the same complete raw records. Numerical calculations and table
+values are unchanged. Generated report files remain outside Git tracking.

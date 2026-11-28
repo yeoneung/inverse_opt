@@ -21,9 +21,10 @@ warnings, environment and summary. balanced_initial retains the
 first independent execution. Scientific values agree; elapsed times vary.
 experiments/report_balanced_base.py retains the complete numerical report and Fig3.
 experiments/report_scalar_studies.py generates the scalar calibration in Fig2.
-experiments/report_jogo.py generates the balanced-study exposition and
-the separate folded-ball implementation controls from the complete raw
-runs. Every condition is retained and table values are unchanged.
+experiments/report_jogo.py generates the compact balanced-study results,
+the computational-design appendix and the separate folded-ball controls
+from the complete raw runs. Every condition and all table values are
+retained. Its legacy data calculations are unchanged.
 verification/balanced_table_values.json records the numerical table values.
 
 GLOBAL REFERENCES
