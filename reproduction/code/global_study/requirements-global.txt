@@ -1,0 +1,4 @@
+# The parent numerical requirements supply NumPy/SciPy/CVXPY/Clarabel/Matplotlib.
+-r ../requirements.txt
+gurobipy==14.0.0
+pyscipopt==6.3.0

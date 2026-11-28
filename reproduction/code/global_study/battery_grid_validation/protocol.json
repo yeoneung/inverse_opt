@@ -1,0 +1,25 @@
+{
+  "application": "synthetic_battery_load_shifting",
+  "horizon_slots": 8,
+  "slot_hours": 3.0,
+  "latent_dimension": 4,
+  "reserve_basis": "cosine_modes_1_to_4",
+  "target_power_kw": [
+    1.0,
+    2.0,
+    4.0
+  ],
+  "reserve_amplitude_kwh": [
+    4.0,
+    8.0,
+    12.0
+  ],
+  "source_power_kw": 0.5,
+  "source_tariff_usd_per_kwh": 1.2,
+  "initial_queries": 16,
+  "global_oracle_time_limit_seconds": 15.0,
+  "maximum_exchange_iterations": 10,
+  "positive_threshold": 1e-06,
+  "repetitions": 1,
+  "scope": "Complete 3x3 synthetic scenario grid; all outcomes retained."
+}

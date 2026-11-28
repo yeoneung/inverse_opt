@@ -1,0 +1,53 @@
+{
+  "capacity_q16_p4": {
+    "cases": 6,
+    "positive": 6,
+    "minimum_positive_bound": 0.00044712739012031655,
+    "median_total_seconds_including_final_validation": 1.5858633499592543,
+    "maximum_total_seconds_including_final_validation": 2.752279599895701
+  },
+  "capacity_q32_p4": {
+    "cases": 6,
+    "positive": 6,
+    "minimum_positive_bound": 0.002340142317495686,
+    "median_total_seconds_including_final_validation": 1.6344190500676632,
+    "maximum_total_seconds_including_final_validation": 2.722788400016725
+  },
+  "capacity_q12_p8": {
+    "cases": 6,
+    "positive": 5,
+    "minimum_positive_bound": 1.2698372955366466e-05,
+    "median_total_seconds_including_final_validation": 78.36432665004395,
+    "maximum_total_seconds_including_final_validation": 226.59981040027924
+  },
+  "battery_q8_p4": {
+    "cases": 9,
+    "positive": 7,
+    "minimum_positive_bound": 1.9946539246785966e-05,
+    "median_total_seconds_including_final_validation": 0.3749950001947582,
+    "maximum_total_seconds_including_final_validation": 0.9709231997840106
+  },
+  "primary_battery_reference": {
+    "mixed_risk_lower": 0.21120287588266143,
+    "mixed_risk_upper": 0.2112029810591342,
+    "proper_risk_lower": 0.2140432661216208,
+    "proper_risk_upper": 0.21404346602292817,
+    "actual_penalty_lower": 0.002840285062486597,
+    "actual_penalty_upper": 0.0028405901402667466,
+    "squared_risk_ratio_interval": [
+      1.013448129606141,
+      1.0134495807805426
+    ],
+    "captured_fraction_interval": [
+      0.43182513950816015,
+      0.431871522266255
+    ]
+  },
+  "scope": {
+    "global_upper_alone_cannot_rescue_original_fixed_anchors": 18,
+    "generic_q32_p8_pilot_still_inconclusive": true,
+    "battery_data": "Synthetic tariffs and loads, ideal lossless battery; not field validation.",
+    "numerics": "Floating-point global solver bounds plus independent QP/contact/separation validation, not interval arithmetic.",
+    "manuscript_modified": false
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "q": 12,
+  "p": 8,
+  "singular_value": 0.75,
+  "seeds": [
+    846100,
+    846101,
+    846102
+  ],
+  "capacity_factors": [
+    0.7,
+    1.4
+  ],
+  "global_seconds_per_call": 15.0,
+  "maximum_exchanges": 20,
+  "capacity_multiplier_bounds": true,
+  "preserved_initial_run": "compact_capacity_pilot/results.json",
+  "prior_six_exchange_result": "No detection; complete previous history and logs retained.",
+  "continuation_rule": "If first case detects, continue remaining five; retain all outcomes and stop only at completed-case boundaries if total wall time exceeds 600 seconds.",
+  "total_wall_guard_seconds": 600.0,
+  "scope": "Exploratory compact-action q12,p8 family; separate from original q32 capacity family."
+}

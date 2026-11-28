@@ -1,0 +1,46 @@
+[
+  {
+    "instance": "q32_p8_s846100_c1.4",
+    "solver": "solve_global_upper",
+    "upper": 4.364873565893453,
+    "lower": 3.0825444808333216,
+    "status": "time_limit",
+    "vars": 122,
+    "nodes": 5340.0,
+    "seconds": 10.00567219988443,
+    "residual": 2.220446049250313e-16
+  },
+  {
+    "instance": "q32_p8_s846100_c1.4",
+    "solver": "solve_box_global_upper",
+    "upper": 7.815892128764933,
+    "lower": 3.0825444808333216,
+    "status": "time_limit",
+    "vars": 72,
+    "nodes": 22550.0,
+    "seconds": 10.005765300011262,
+    "residual": 1.3413631760883504e-08
+  },
+  {
+    "instance": "q32_p8_s846100_c0.7",
+    "solver": "solve_global_upper",
+    "upper": 3.31055531841839,
+    "lower": 1.6275738988347004,
+    "status": "time_limit",
+    "vars": 184,
+    "nodes": 2676.0,
+    "seconds": 10.005843800026923,
+    "residual": 2.420054268092997e-09
+  },
+  {
+    "instance": "q32_p8_s846100_c0.7",
+    "solver": "solve_box_global_upper",
+    "upper": 3.7759828190426137,
+    "lower": 1.58743422681729,
+    "status": "time_limit",
+    "vars": 104,
+    "nodes": 10255.0,
+    "seconds": 10.004910600138828,
+    "residual": 6.052963186231608e-09
+  }
+]

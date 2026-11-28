@@ -1,0 +1,87 @@
+
+Gurobi 14.0.0 (win64) logging started Fri Nov 27 18:05:57 2026
+
+Set parameter LogFile to value ".\battery_tight_reference_battery_corner_q8_p4_cosine_mixed_proper_minimax.log"
+Warning for adding constraints: zero or small (< 1e-13) coefficients, ignored
+Warning: zero or small (< 1e-13) coefficients in quadratic constraints, ignored
+Gurobi Optimizer version 14.0.0 build v14.0.0rc1 (win64 - Windows 10.0 (19045.2))
+
+CPU model: Intel(R) Core(TM) i9-14900KF, instruction set [SSE2|AVX|AVX2]
+Thread count: 24 physical cores, 32 logical processors, using up to 1 threads
+
+Non-default parameters:
+TimeLimit  15
+FeasibilityTol  1e-08
+IntFeasTol  1e-08
+MIPGap  1e-07
+MIPGapAbs  1e-08
+OptimalityTol  1e-08
+LogToConsole  0
+Seed  271127
+Threads  1
+
+Optimize a model with 40 rows, 77 columns and 436 nonzeros (Min)
+Model fingerprint: 0x354ae6ad
+Model has 1 linear objective coefficients
+Model has 17 quadratic constraints
+Model has 64 simple general constraints
+  64 INDICATOR
+Variable types: 45 continuous, 32 integer (32 binary)
+Coefficient statistics:
+  Matrix range     [3e-03, 8e+00]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [4e-02, 3e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [2e-01, 3e+00]
+  RHS range        [3e-03, 2e+01]
+  QRHS range       [4e+00, 5e+00]
+  GenCon rhs range [7e-01, 2e+01]
+  GenCon coe range [3e-03, 8e+00]
+
+Loaded user MIP start with objective 0.326718
+
+Presolve added 52 rows and 6 columns
+Presolve time: 0.00s
+Presolved: 93 rows, 91 columns, 580 nonzeros
+Presolved model has 8 quadratic constraint(s)
+Variable types: 62 continuous, 29 integer (29 binary)
+
+Root relaxation: objective 0.000000e+00, 69 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0    8    0.32672    0.00000   100%     -    0s
+     0     0    0.00000    0    5    0.32672    0.00000   100%     -    0s
+     0     0    0.00000    0    8    0.32672    0.00000   100%     -    0s
+     0     0    0.00000    0    8    0.32672    0.00000   100%     -    0s
+     0     0    0.11496    0    9    0.32672    0.11496  64.8%     -    0s
+     0     0    0.14005    0    4    0.32672    0.14005  57.1%     -    0s
+     0     0    0.15497    0    4    0.32672    0.15497  52.6%     -    0s
+     0     0    0.15870    0    4    0.32672    0.15870  51.4%     -    0s
+     0     0    0.15964    0    4    0.32672    0.15964  51.1%     -    0s
+     0     0    0.15964    0    4    0.32672    0.15964  51.1%     -    0s
+     0     0    0.22357    0    8    0.32672    0.22357  31.6%     -    0s
+     0     0    0.27321    0    4    0.32672    0.27321  16.4%     -    0s
+     0     0    0.30465    0    6    0.32672    0.30465  6.75%     -    0s
+     0     0    0.30465    0    6    0.32672    0.30465  6.75%     -    0s
+H    0     0                       0.3098091    0.30465  1.66%     -    0s
+     0     0    0.30465    0    6    0.30981    0.30465  1.66%     -    0s
+     0     0    0.30465    0    6    0.30981    0.30465  1.66%     -    0s
+     0     0    0.30465    0    6    0.30981    0.30465  1.66%     -    0s
+     0     2    0.30465    0    6    0.30981    0.30465  1.66%     -    0s
+*   10     4               6       0.3098088    0.30465  1.66%   0.0    0s
+*   12     2               6       0.3094777    0.30465  1.56%   0.0    0s
+
+Cutting planes:
+  MIR: 3
+  Flow cover: 2
+
+Explored 15 nodes (318 simplex iterations) in 0.06 seconds (0.05 work units)
+Thread count was 1 (of 32 available processors)
+
+Solution count 3: 0.309477 0.309478 0.309809 
+No other solutions better than 0.309478
+
+Optimal solution found (tolerance 1.00e-07)
+Best objective 3.094774895159e-01, best bound 3.094774895159e-01, gap 0.0000%

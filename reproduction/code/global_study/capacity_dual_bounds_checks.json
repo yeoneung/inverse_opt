@@ -1,0 +1,187 @@
+{
+  "passed": true,
+  "cases": 18,
+  "rows": [
+    {
+      "instance": "q16_p4_s846100_c0.7",
+      "corners": 16,
+      "maximum_multiplier_bound_violation": -9.999999717180685e-10,
+      "positive_part_C": 1.3049747465479125,
+      "clipped_C": 1.3049747465479125,
+      "largest_capacity_bound": 3.941699865641939,
+      "largest_slater_bound": 13.24087146993246,
+      "min_bound_ratio": 1.281648274983688e-10
+    },
+    {
+      "instance": "q16_p4_s846100_c1.4",
+      "corners": 16,
+      "maximum_multiplier_bound_violation": -1e-09,
+      "positive_part_C": 1.3049747465479125,
+      "clipped_C": 1.3049747465479125,
+      "largest_capacity_bound": 2.471219841321444,
+      "largest_slater_bound": 9.114313538623467,
+      "min_bound_ratio": 1.754313944837096e-10
+    },
+    {
+      "instance": "q16_p4_s846101_c0.7",
+      "corners": 16,
+      "maximum_multiplier_bound_violation": -9.999998051846148e-10,
+      "positive_part_C": 0.971127327065195,
+      "clipped_C": 0.971127327065195,
+      "largest_capacity_bound": 2.7549492373538773,
+      "largest_slater_bound": 10.579166450103969,
+      "min_bound_ratio": 1.186079990455537e-10
+    },
+    {
+      "instance": "q16_p4_s846101_c1.4",
+      "corners": 16,
+      "maximum_multiplier_bound_violation": -1e-09,
+      "positive_part_C": 0.971127327065195,
+      "clipped_C": 0.971127327065195,
+      "largest_capacity_bound": 1.7494233649775572,
+      "largest_slater_bound": 9.120052438001833,
+      "min_bound_ratio": 1.3758405148946725e-10
+    },
+    {
+      "instance": "q16_p4_s846102_c0.7",
+      "corners": 16,
+      "maximum_multiplier_bound_violation": -1e-09,
+      "positive_part_C": 1.6675645837257833,
+      "clipped_C": 1.6413003415762026,
+      "largest_capacity_bound": 4.384328252098536,
+      "largest_slater_bound": 10.731429230426851,
+      "min_bound_ratio": 1.2790628520371465e-10
+    },
+    {
+      "instance": "q16_p4_s846102_c1.4",
+      "corners": 16,
+      "maximum_multiplier_bound_violation": -9.999998051846148e-10,
+      "positive_part_C": 1.6675645837257833,
+      "clipped_C": 1.6675645837257833,
+      "largest_capacity_bound": 2.5532320276523417,
+      "largest_slater_bound": 5.877540096695057,
+      "min_bound_ratio": 2.335360074467684e-10
+    },
+    {
+      "instance": "q32_p4_s846100_c0.7",
+      "corners": 16,
+      "maximum_multiplier_bound_violation": -9.999999162069173e-10,
+      "positive_part_C": 2.11236104209092,
+      "clipped_C": 2.11235493802294,
+      "largest_capacity_bound": 4.894838057444614,
+      "largest_slater_bound": 17.72392790624933,
+      "min_bound_ratio": 7.282558083178724e-11
+    },
+    {
+      "instance": "q32_p4_s846100_c1.4",
+      "corners": 16,
+      "maximum_multiplier_bound_violation": -9.999999994736442e-10,
+      "positive_part_C": 2.11236104209092,
+      "clipped_C": 2.11236104209092,
+      "largest_capacity_bound": 2.718115758310955,
+      "largest_slater_bound": 11.951592380614922,
+      "min_bound_ratio": 1.0170008038415712e-10
+    },
+    {
+      "instance": "q32_p4_s846101_c0.7",
+      "corners": 16,
+      "maximum_multiplier_bound_violation": -9.999999717180685e-10,
+      "positive_part_C": 1.1518796115490764,
+      "clipped_C": 1.1493799688163522,
+      "largest_capacity_bound": 2.733708982377903,
+      "largest_slater_bound": 11.423369048450317,
+      "min_bound_ratio": 1.252891431824522e-10
+    },
+    {
+      "instance": "q32_p4_s846101_c1.4",
+      "corners": 16,
+      "maximum_multiplier_bound_violation": -9.999999994736442e-10,
+      "positive_part_C": 1.1518796115490764,
+      "clipped_C": 1.1518796115490764,
+      "largest_capacity_bound": 1.641498432210164,
+      "largest_slater_bound": 8.440071525670986,
+      "min_bound_ratio": 1.5746582846160416e-10
+    },
+    {
+      "instance": "q32_p4_s846102_c0.7",
+      "corners": 16,
+      "maximum_multiplier_bound_violation": -9.999997774290392e-10,
+      "positive_part_C": 0.9836507222082953,
+      "clipped_C": 0.9836507222082953,
+      "largest_capacity_bound": 3.0856001359934204,
+      "largest_slater_bound": 16.803225390261716,
+      "min_bound_ratio": 8.156220082670342e-11
+    },
+    {
+      "instance": "q32_p4_s846102_c1.4",
+      "corners": 16,
+      "maximum_multiplier_bound_violation": -1e-09,
+      "positive_part_C": 0.9836507222082953,
+      "clipped_C": 0.9836507222082953,
+      "largest_capacity_bound": 2.110057747933994,
+      "largest_slater_bound": 14.418879697227169,
+      "min_bound_ratio": 8.507704161771443e-11
+    },
+    {
+      "instance": "q32_p8_s846100_c0.7",
+      "corners": 256,
+      "maximum_multiplier_bound_violation": -9.999998051846148e-10,
+      "positive_part_C": 3.1044330783626215,
+      "clipped_C": 3.04386633339851,
+      "largest_capacity_bound": 7.361498465677874,
+      "largest_slater_bound": 26.093760717553543,
+      "min_bound_ratio": 6.223721613553405e-11
+    },
+    {
+      "instance": "q32_p8_s846100_c1.4",
+      "corners": 256,
+      "maximum_multiplier_bound_violation": -9.999997496734636e-10,
+      "positive_part_C": 3.1044330783626215,
+      "clipped_C": 3.1044330783626215,
+      "largest_capacity_bound": 4.170076314004633,
+      "largest_slater_bound": 16.278445286389015,
+      "min_bound_ratio": 7.929229860007434e-11
+    },
+    {
+      "instance": "q32_p8_s846101_c0.7",
+      "corners": 256,
+      "maximum_multiplier_bound_violation": -9.999997496734636e-10,
+      "positive_part_C": 2.049425105411954,
+      "clipped_C": 2.0233073732477402,
+      "largest_capacity_bound": 4.919075630666808,
+      "largest_slater_bound": 19.482528569879772,
+      "min_bound_ratio": 1.0025560806324787e-10
+    },
+    {
+      "instance": "q32_p8_s846101_c1.4",
+      "corners": 256,
+      "maximum_multiplier_bound_violation": -9.999997774290392e-10,
+      "positive_part_C": 2.049425105411954,
+      "clipped_C": 2.049425105411954,
+      "largest_capacity_bound": 2.9617305359579014,
+      "largest_slater_bound": 12.569651014315477,
+      "min_bound_ratio": 1.134883200040608e-10
+    },
+    {
+      "instance": "q32_p8_s846102_c0.7",
+      "corners": 256,
+      "maximum_multiplier_bound_violation": -9.999997496734636e-10,
+      "positive_part_C": 1.911479811511084,
+      "clipped_C": 1.90694946977518,
+      "largest_capacity_bound": 5.298989541112862,
+      "largest_slater_bound": 25.648276975338817,
+      "min_bound_ratio": 7.165308772163585e-11
+    },
+    {
+      "instance": "q32_p8_s846102_c1.4",
+      "corners": 256,
+      "maximum_multiplier_bound_violation": -9.999997774290392e-10,
+      "positive_part_C": 1.911479811511084,
+      "clipped_C": 1.911479811511084,
+      "largest_capacity_bound": 3.4122522488975866,
+      "largest_slater_bound": 18.59473834179927,
+      "min_bound_ratio": 7.370407792919096e-11
+    }
+  ],
+  "scope": "The bounds follow analytically from KKT; forward corner checks are numerical implementation checks only."
+}

@@ -62,3 +62,14 @@ experiments/scalar_capacity.py reproduces the 120 scalar capacity cases.
 At 129 shared queries the original and adaptive bounds detect 5 and 71
 positive cases, respectively. The folded-ball study is an implementation
 control with an analytical upper bound; it does not test adaptive partitioning.
+
+GLOBAL SOLVER AND APPLICATION STUDY
+global_study/ contains the optional KKT-based global upper-risk solvers,
+worst-response exchange, twelve retained four-parameter capacity cases,
+an exploratory six-case eight-parameter cohort and nine battery cases.
+It preserves unsuccessful cases, original solver logs and the pilot that
+preceded the extended eight-parameter budget. The battery data are synthetic.
+Read global_study/README.txt for optional solver installation and fresh-output
+reruns. From the package root, verification/check_global_results.py checks
+the recorded artifacts without optional solvers. The independent QP/SOCP
+audit and the global reruns require the documented solver dependencies.

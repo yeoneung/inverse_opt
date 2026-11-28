@@ -1,0 +1,23 @@
+{
+  "q": 12,
+  "p": 8,
+  "singular_value": 0.75,
+  "seeds": [
+    846100,
+    846101,
+    846102
+  ],
+  "capacity_factors": [
+    0.7,
+    1.4
+  ],
+  "global_seconds_per_call": 15.0,
+  "maximum_exchanges": 6,
+  "capacity_multiplier_bounds": true,
+  "first_case": [
+    846100,
+    0.7
+  ],
+  "continuation_rule": "Run remaining five cases only if first case detects a positive certificate; retain all outcomes.",
+  "scope": "Exploratory tractability pilot; a new smaller-action family, separate from original q32 tests."
+}

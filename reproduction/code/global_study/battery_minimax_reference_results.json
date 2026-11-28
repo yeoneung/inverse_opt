@@ -1,0 +1,393 @@
+{
+  "rows": [
+    {
+      "label": "battery_corner_q8_p4_cosine",
+      "p": 4,
+      "q": 8,
+      "witnesses": 18,
+      "proper_risk_lower": 0.2140432661216208,
+      "proper_risk_upper": 0.21404346602292817,
+      "mixed_risk_lower": 0.21120287588266143,
+      "mixed_risk_upper": 0.2120906822240129,
+      "actual_penalty_lower": 0.0019525838976079124,
+      "actual_penalty_upper": 0.0028405901402667466,
+      "algorithm_certificate": 0.001226638233606192,
+      "captured_fraction_interval": [
+        0.43182513950816015,
+        0.6282128184652819
+      ],
+      "restricted_witness_minimax": {
+        "lower": 0.2140432661216208,
+        "raw_solver_lower": 0.2140433661216208,
+        "finite_witness_incumbent": 0.2140433661216208,
+        "validated_finite_risk": 0.21404336602292862,
+        "status": "optimal",
+        "status_code": 2,
+        "solutions": 3,
+        "gap": 0.0,
+        "nodes": 2.0,
+        "variables": 77,
+        "linear_constraints": 40,
+        "quadratic_constraints": 18,
+        "indicator_constraints": 64,
+        "witness_count": 18,
+        "maximum_witness_projection_difference": 0.0,
+        "parameter": [
+          -0.03409874406391289,
+          0.04178155305462594,
+          -0.04486903781596818,
+          -0.1784335358264587
+        ],
+        "response": [
+          -0.03542515567157917,
+          0.1857926377070459,
+          0.16495790057792042,
+          -0.3120541570827913,
+          -1.1246262895227477,
+          -1.4573571757128705,
+          -0.7569198478592298,
+          2.220446049250313e-16
+        ],
+        "maximum_kkt_residual": 9.57012247226885e-14,
+        "projection_difference": 2.603472992745992e-14,
+        "maximum_checked_multiplier": 0.2151598217108858,
+        "geometry_seconds": 0.0,
+        "witness_seconds": 0.0026880998630076647,
+        "build_seconds": 0.003545899875462055,
+        "solver_seconds": 0.04999995231628418,
+        "validation_seconds": 0.00041259988211095333,
+        "total_seconds": 0.05674119992181659,
+        "lower_backoff": 1e-07,
+        "slater_margin": 0.6440622394001889,
+        "maximum_dual_bound": 2.1906857192856064,
+        "solver": "Gurobi",
+        "solver_version": [
+          14,
+          0,
+          0
+        ],
+        "threads": 1,
+        "seed": 271127,
+        "complementarity": "indicator",
+        "formulation": "quadratic_epigraph_on_projection_KKT_graph"
+      },
+      "proper_action_worst_risk": {
+        "upper": 0.21404346602292817,
+        "incumbent": 0.21404336602292862,
+        "lower": 0.21404336602292862,
+        "raw_solver_upper": 0.21404336602292817,
+        "raw_solver_incumbent": 0.21404336602292817,
+        "box_upper": 27.558983404690586,
+        "status": "optimal",
+        "status_code": 2,
+        "gap": 0.0,
+        "absolute_gap": 9.999999955878636e-08,
+        "variables": 76,
+        "nodes": 404.0,
+        "solutions": 1,
+        "parameter": [
+          -1.0,
+          -1.0,
+          1.0,
+          0.5651588119173545
+        ],
+        "response": [
+          -0.0466005584158764,
+          0.2361112866474135,
+          0.40305878929905026,
+          0.005832437595882867,
+          -1.006573340471492,
+          -1.5280889424352728,
+          -0.9244676834152032,
+          -0.08142991389034915
+        ],
+        "maximum_kkt_residual": 4.440892098500626e-16,
+        "projection_difference": 0.0,
+        "objective_difference": 4.440892098500626e-16,
+        "solver_seconds": 0.18000006675720215,
+        "build_seconds": 0.002042599953711033,
+        "validation_seconds": 0.000543300062417984,
+        "geometry_seconds": 0.0,
+        "witness_seconds": 0.0,
+        "total_seconds": 0.18390369997359812,
+        "solver": "Gurobi",
+        "solver_version": [
+          14,
+          0,
+          0
+        ],
+        "complementarity": "indicator",
+        "objective_form": "stationarity",
+        "slater_margin": 0.6440622394001889,
+        "maximum_dual_bound": 2.1906857192856064,
+        "exact_zero_multipliers": 0,
+        "upper_backoff": 1e-07,
+        "threads": 1,
+        "seed": 271127
+      },
+      "proper_physical_schedule": {
+        "power_kw": [
+          -0.3815027891974335,
+          0.827247442951311,
+          1.9719252253914121,
+          1.573968557277281,
+          -1.3077993499263545,
+          -4.000000000000001,
+          -2.6838390864962167,
+          8.548331111698068e-16
+        ],
+        "soc_kwh": [
+          14.855491632407698,
+          17.33723396126163,
+          23.253009637435866,
+          27.97491530926771,
+          24.051517259488648,
+          12.051517259488646,
+          3.9999999999999947,
+          3.9999999999999964
+        ],
+        "grid_import_kw": [
+          1.4184972108025664,
+          2.427247442951311,
+          3.771925225391412,
+          4.073968557277281,
+          2.292200650073646,
+          0.29999999999999893,
+          0.5161609135037835,
+          2.400000000000001
+        ]
+      },
+      "mixed_physical_schedule": {
+        "power_kw": [
+          -0.3700911054789012,
+          0.8238076030308763,
+          1.9747629589130893,
+          1.572478996497206,
+          -1.2918131055528839,
+          -3.999999999999999,
+          -2.5572957776516745,
+          -0.1518495697577122
+        ],
+        "soc_kwh": [
+          14.889726683563296,
+          17.361149492655926,
+          23.285438369395195,
+          28.00287535888681,
+          24.127436042228158,
+          12.127436042228162,
+          4.455548709273138,
+          4.000000000000002
+        ],
+        "grid_import_kw": [
+          1.429908894521099,
+          2.4238076030308764,
+          3.7747629589130893,
+          4.072478996497206,
+          2.3081868944471164,
+          0.3000000000000007,
+          0.6427042223483257,
+          2.248150430242288
+        ]
+      },
+      "maximum_physical_feasibility_residual": 5.329070518200751e-15,
+      "geometry_preparation_seconds": 0.024915900081396103,
+      "total_seconds": 0.2663232001941651,
+      "scope": "Finite-witness global minimization lower-bounds P; a separate global worst-response solve upper-bounds P at a feasible proper candidate. Floating-point bounds with numerical backoffs, not interval validation."
+    },
+    {
+      "label": "battery_corner_q8_p4_cosine_mixed",
+      "p": 4,
+      "q": 8,
+      "witnesses": 17,
+      "proper_risk_lower": 0.30947738951586196,
+      "proper_risk_upper": 0.3094775894745491,
+      "mixed_risk_lower": 0.3045408675460287,
+      "mixed_risk_upper": 0.3046222336714732,
+      "actual_penalty_lower": 0.004855155844388781,
+      "actual_penalty_upper": 0.0049367219285204045,
+      "algorithm_certificate": 0.0035035239254019857,
+      "captured_fraction_interval": [
+        0.7096863011792188,
+        0.7216089529754419
+      ],
+      "restricted_witness_minimax": {
+        "lower": 0.30947738951586196,
+        "raw_solver_lower": 0.30947748951586196,
+        "finite_witness_incumbent": 0.30947748951586196,
+        "validated_finite_risk": 0.30947748947454945,
+        "status": "optimal",
+        "status_code": 2,
+        "solutions": 3,
+        "gap": 0.0,
+        "nodes": 15.0,
+        "variables": 77,
+        "linear_constraints": 40,
+        "quadratic_constraints": 17,
+        "indicator_constraints": 64,
+        "witness_count": 17,
+        "maximum_witness_projection_difference": 0.0,
+        "parameter": [
+          -0.04081444846203697,
+          0.040814590869666656,
+          0.08255728621825931,
+          0.04081657053478649
+        ],
+        "response": [
+          -0.0366392016603348,
+          0.16158613973843056,
+          0.18850022299495503,
+          -0.2851067943620359,
+          -1.1266885682533294,
+          -1.4606142265027804,
+          -0.7656587749196453,
+          2.7755575615628914e-16
+        ],
+        "maximum_kkt_residual": 3.8191672047105385e-13,
+        "projection_difference": 1.0125233984581428e-13,
+        "maximum_checked_multiplier": 0.22016728173288333,
+        "geometry_seconds": 0.0,
+        "witness_seconds": 0.0022827000357210636,
+        "build_seconds": 0.0026618000119924545,
+        "solver_seconds": 0.057000160217285156,
+        "validation_seconds": 0.0003370000049471855,
+        "total_seconds": 0.06269100005738437,
+        "lower_backoff": 1e-07,
+        "slater_margin": 0.6440622394001889,
+        "maximum_dual_bound": 2.055552883253169,
+        "solver": "Gurobi",
+        "solver_version": [
+          14,
+          0,
+          0
+        ],
+        "threads": 1,
+        "seed": 271127,
+        "complementarity": "indicator",
+        "formulation": "quadratic_epigraph_on_projection_KKT_graph"
+      },
+      "proper_action_worst_risk": {
+        "upper": 0.3094775894745491,
+        "incumbent": 0.30947748947454945,
+        "lower": 0.30947748947454945,
+        "raw_solver_upper": 0.3094774894745491,
+        "raw_solver_incumbent": 0.3094774894745491,
+        "box_upper": 27.684909039516057,
+        "status": "optimal",
+        "status_code": 2,
+        "gap": 0.0,
+        "absolute_gap": 9.999999966980866e-08,
+        "variables": 76,
+        "nodes": 344.0,
+        "solutions": 1,
+        "parameter": [
+          1.0,
+          -1.0,
+          1.0,
+          -1.0
+        ],
+        "response": [
+          0.09834002973266837,
+          0.15090256894269588,
+          0.10183865617678045,
+          -0.43925054554432413,
+          -1.5882422901516609,
+          -1.3850288816255094,
+          -0.5628572657245468,
+          1.1102230246251565e-16
+        ],
+        "maximum_kkt_residual": 1.7763568394002505e-15,
+        "projection_difference": 1.1102230246251565e-16,
+        "objective_difference": 3.3306690738754696e-16,
+        "solver_seconds": 0.14599990844726562,
+        "build_seconds": 0.002028099959716201,
+        "validation_seconds": 0.0004986000712960958,
+        "geometry_seconds": 0.0,
+        "witness_seconds": 0.0,
+        "total_seconds": 0.1491166998166591,
+        "solver": "Gurobi",
+        "solver_version": [
+          14,
+          0,
+          0
+        ],
+        "complementarity": "indicator",
+        "objective_form": "stationarity",
+        "slater_margin": 0.6440622394001889,
+        "maximum_dual_bound": 2.055552883253169,
+        "exact_zero_multipliers": 0,
+        "upper_backoff": 1e-07,
+        "threads": 1,
+        "seed": 271127
+      },
+      "proper_physical_schedule": {
+        "power_kw": [
+          -0.3514485814920792,
+          0.6972957457423179,
+          2.00674144074063,
+          1.668224762224344,
+          -1.3059883393605864,
+          -4.000000000000001,
+          -2.7148250278546264,
+          1.0685413889622586e-15
+        ],
+        "soc_kwh": [
+          14.945654255523763,
+          17.037541492750716,
+          23.057765814972605,
+          28.06244010164564,
+          24.144475083563883,
+          12.144475083563878,
+          4.0,
+          4.0000000000000036
+        ],
+        "grid_import_kw": [
+          1.448551418507921,
+          2.2972957457423178,
+          3.8067414407406304,
+          4.1682247622243445,
+          2.2940116606394136,
+          0.29999999999999893,
+          0.48517497214537375,
+          2.400000000000001
+        ]
+      },
+      "mixed_physical_schedule": {
+        "power_kw": [
+          -0.34794380525909935,
+          0.7606194138244137,
+          1.9748794734603952,
+          1.6608789407393163,
+          -1.284632783650034,
+          -4.0,
+          -2.5660799956413007,
+          -0.19772124347369183
+        ],
+        "soc_kwh": [
+          14.956168584222702,
+          17.238026825695943,
+          23.16266524607713,
+          28.145302068295077,
+          24.291403717344977,
+          12.291403717344975,
+          4.5931637304210735,
+          3.9999999999999964
+        ],
+        "grid_import_kw": [
+          1.4520561947409008,
+          2.3606194138244136,
+          3.774879473460395,
+          4.160878940739316,
+          2.315367216349966,
+          0.2999999999999998,
+          0.6339200043586994,
+          2.202278756526308
+        ]
+      },
+      "maximum_physical_feasibility_residual": 3.552713678800501e-15,
+      "geometry_preparation_seconds": 0.018030100036412477,
+      "total_seconds": 0.23051390005275607,
+      "scope": "Finite-witness global minimization lower-bounds P; a separate global worst-response solve upper-bounds P at a feasible proper candidate. Floating-point bounds with numerical backoffs, not interval validation."
+    }
+  ],
+  "passed": true
+}

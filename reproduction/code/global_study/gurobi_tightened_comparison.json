@@ -1,0 +1,24 @@
+[
+  {
+    "upper": 3.6516217511461986,
+    "lower": 1.6267141109595196,
+    "status": "time_limit",
+    "variables": 200,
+    "nodes": 9867.0,
+    "total_seconds": 10.01324350014329,
+    "maximum_kkt_residual": 4.440892098500626e-16,
+    "formulation": "full_kkt",
+    "comp": "indicator"
+  },
+  {
+    "upper": 3.7759828190426137,
+    "lower": 1.58743422681729,
+    "status": "time_limit",
+    "variables": 104,
+    "nodes": 10253.0,
+    "total_seconds": 10.026033899979666,
+    "maximum_kkt_residual": 6.052963186231608e-09,
+    "formulation": "box_partial_dual_pwl",
+    "comp": "bigm"
+  }
+]

@@ -1,0 +1,134 @@
+{
+  "passed": true,
+  "scenarios": 9,
+  "successful_computations": 9,
+  "positive_certificates": 7,
+  "total_seconds": 4.137322599999607,
+  "outcomes": [
+    {
+      "label": "battery_grid_P1_R4",
+      "power_kw": 1.0,
+      "amplitude_kwh": 4.0,
+      "passed": true,
+      "certificate": 0.0,
+      "iterations": 1,
+      "oracle_statuses": [
+        "optimal"
+      ],
+      "total_seconds": 0.10314029990695417,
+      "error": null
+    },
+    {
+      "label": "battery_grid_P1_R8",
+      "power_kw": 1.0,
+      "amplitude_kwh": 8.0,
+      "passed": true,
+      "certificate": 0.000621564163222843,
+      "iterations": 2,
+      "oracle_statuses": [
+        "optimal",
+        "optimal"
+      ],
+      "total_seconds": 0.22077819984406233,
+      "error": null
+    },
+    {
+      "label": "battery_grid_P1_R12",
+      "power_kw": 1.0,
+      "amplitude_kwh": 12.0,
+      "passed": true,
+      "certificate": 0.0014718862689688805,
+      "iterations": 3,
+      "oracle_statuses": [
+        "optimal",
+        "optimal",
+        "optimal"
+      ],
+      "total_seconds": 0.327762900153175,
+      "error": null
+    },
+    {
+      "label": "battery_grid_P2_R4",
+      "power_kw": 2.0,
+      "amplitude_kwh": 4.0,
+      "passed": true,
+      "certificate": 0.0,
+      "iterations": 1,
+      "oracle_statuses": [
+        "optimal"
+      ],
+      "total_seconds": 0.1645501998718828,
+      "error": null
+    },
+    {
+      "label": "battery_grid_P2_R8",
+      "power_kw": 2.0,
+      "amplitude_kwh": 8.0,
+      "passed": true,
+      "certificate": 0.00042876141300859927,
+      "iterations": 2,
+      "oracle_statuses": [
+        "optimal",
+        "optimal"
+      ],
+      "total_seconds": 0.49767869990319014,
+      "error": null
+    },
+    {
+      "label": "battery_grid_P2_R12",
+      "power_kw": 2.0,
+      "amplitude_kwh": 12.0,
+      "passed": true,
+      "certificate": 5.899735865522171e-05,
+      "iterations": 3,
+      "oracle_statuses": [
+        "optimal",
+        "optimal",
+        "optimal"
+      ],
+      "total_seconds": 0.9240437999833375,
+      "error": null
+    },
+    {
+      "label": "battery_grid_P4_R4",
+      "power_kw": 4.0,
+      "amplitude_kwh": 4.0,
+      "passed": true,
+      "certificate": 1.994653924800721e-05,
+      "iterations": 1,
+      "oracle_statuses": [
+        "optimal"
+      ],
+      "total_seconds": 0.18780649988912046,
+      "error": null
+    },
+    {
+      "label": "battery_grid_P4_R8",
+      "power_kw": 4.0,
+      "amplitude_kwh": 8.0,
+      "passed": true,
+      "certificate": 0.001226638233606192,
+      "iterations": 2,
+      "oracle_statuses": [
+        "optimal",
+        "interrupted"
+      ],
+      "total_seconds": 0.5216117000672966,
+      "error": null
+    },
+    {
+      "label": "battery_grid_P4_R12",
+      "power_kw": 4.0,
+      "amplitude_kwh": 12.0,
+      "passed": true,
+      "certificate": 0.0012083188815409929,
+      "iterations": 2,
+      "oracle_statuses": [
+        "optimal",
+        "interrupted"
+      ],
+      "total_seconds": 0.8507932000793517,
+      "error": null
+    }
+  ]
+}

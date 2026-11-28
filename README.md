@@ -63,9 +63,45 @@ All query setup, forward solves, anchor updates, upper-bound operations,
 conic checks and bookkeeping enter the balanced study's reported totals.
 The supplied solver warnings, residuals, duality gaps and numerical backoffs
 are retained. These are floating-point diagnostics, not interval validation.
-Zero detections are inconclusive. General capacity tests with three, four
-or eight latent directions are not presented as successful detections.
+Zero detections are inconclusive. The original 513-query capacity benchmark
+misses the tested higher-dimensional cases; the global-solver extension below
+uses additional computation and witness updates.
 
 The checks use package-local imports and do not require a parent project
 directory. Generated figures, numerical summaries and execution logs are
 excluded from Git tracking.
+
+
+## Global worst-response exchange and battery scheduling
+
+The portable `reproduction/code/global_study/` directory adds KKT-based global
+upper-risk optimization, witness/center exchange and complete synthetic records:
+
+- The twelve existing four-parameter capacity instances all yield positive
+  lower bounds, compared with none for the original 513-query benchmark.
+- A separate exploratory eight-parameter, twelve-action cohort detects five of
+  six conditions. Its initial failed pilot, extended budget, final failure and
+  the unresolved larger eight-parameter pilot are retained.
+- An idealized 24-hour battery model detects seven of nine conditions.
+  Independent global reference risks quantify the captured prediction penalty.
+- An independent forward-QP/SOCP audit reconstructs witnesses and anchors in
+  all 27 new cases and checks 92 sampled anchors. Conservative upper-bound
+  transfer accounts for numerical anchor repairs.
+
+Check the recorded data without optional global solvers:
+
+```sh
+python -I reproduction/verification/check_global_results.py
+```
+
+Optional global runs and the independent QP/SOCP audit require the documented
+Gurobi/PySCIPOpt dependencies. See `reproduction/code/global_study/README.txt`
+for installation, license scope and commands with fresh output paths. Original
+records are preserved; only private machine-path headers in three logs were
+redacted. No solver binaries are bundled. The new detection timings include
+independent validation and exclude separate tight-reference computations.
+The experiments do not match the query benchmark's runtime budget or claim a
+speed advantage. Corner initialization costs `2**p` forward solves. The battery
+uses synthetic prices/loads and a lossless model; its risk is a quadratic
+schedule-prediction error, not a monetary loss. All bounds use floating-point
+solvers and numerical checks, not interval validation.

@@ -1,0 +1,90 @@
+
+Gurobi 14.0.0 (win64) logging started Fri Nov 27 18:01:14 2026
+
+Set parameter OutputFlag to value 1
+Warning for adding constraints: zero or small (< 1e-13) coefficients, ignored
+Gurobi Optimizer version 14.0.0 build v14.0.0rc1 (win64 - Windows 10.0 (19045.2))
+
+CPU model: Intel(R) Core(TM) i9-14900KF, instruction set [SSE2|AVX|AVX2]
+Thread count: 24 physical cores, 32 logical processors, using up to 1 threads
+
+Non-default parameters:
+TimeLimit  15
+FeasibilityTol  1e-08
+IntFeasTol  1e-08
+MIPGap  1e-06
+MIPGapAbs  1e-07
+OptimalityTol  1e-08
+LogToConsole  0
+NonConvex  2
+Seed  271127
+Threads  1
+
+Optimize a model with 104 rows, 76 columns and 732 nonzeros (Max)
+Model fingerprint: 0xcbe3772b
+Model has 40 linear objective coefficients and an objective constant of -2.4206929176481267e+00
+Model has 28 quadratic objective terms
+Variable types: 44 continuous, 32 integer (32 binary)
+Coefficient statistics:
+  Matrix range     [3e-03, 5e+01]
+  Objective range  [5e-02, 2e+01]
+  QObjective range [1e-02, 4e-01]
+  Bounds range     [2e-01, 5e+00]
+  RHS range        [3e-03, 3e+01]
+
+Loaded user MIP start with objective 0.333107
+
+Presolve removed 6 rows and 2 columns
+Presolve time: 0.00s
+Presolved: 155 rows, 104 columns, 900 nonzeros
+Presolved model has 28 bilinear constraint(s)
+
+Solving non-convex MIQCP to global optimality
+
+Variable types: 73 continuous, 31 integer (31 binary)
+
+Root relaxation: objective 2.076625e+00, 133 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    2.07662    0   32    0.33311    2.07662   523%     -    0s
+     0     0    1.59390    0   27    0.33311    1.59390   378%     -    0s
+     0     0    1.46340    0   27    0.33311    1.46340   339%     -    0s
+     0     0    1.46137    0   26    0.33311    1.46137   339%     -    0s
+     0     0    1.27766    0   29    0.33311    1.27766   284%     -    0s
+     0     0    1.26890    0   27    0.33311    1.26890   281%     -    0s
+     0     0    1.25451    0   27    0.33311    1.25451   277%     -    0s
+     0     0    1.21532    0   27    0.33311    1.21532   265%     -    0s
+     0     0    1.20802    0   28    0.33311    1.20802   263%     -    0s
+     0     0    1.20511    0   27    0.33311    1.20511   262%     -    0s
+     0     0    1.20244    0   27    0.33311    1.20244   261%     -    0s
+     0     0    1.19439    0   27    0.33311    1.19439   259%     -    0s
+     0     0    1.19301    0   27    0.33311    1.19301   258%     -    0s
+     0     0    1.19008    0   27    0.33311    1.19008   257%     -    0s
+     0     0    1.18517    0   27    0.33311    1.18517   256%     -    0s
+     0     0    1.18454    0   27    0.33311    1.18454   256%     -    0s
+     0     0    1.18265    0   27    0.33311    1.18265   255%     -    0s
+     0     0    1.18208    0   27    0.33311    1.18208   255%     -    0s
+     0     0    1.12785    0   27    0.33311    1.12785   239%     -    0s
+     0     0    1.12785    0   27    0.33311    1.12785   239%     -    0s
+     0     2    1.12785    0   27    0.33311    1.12785   239%     -    0s
+H    3     3                       0.3530285    1.01112   186%  13.3    0s
+H    8     8                       0.3633902    1.01112   178%  14.4    0s
+H   28    26                       0.3648663    1.01112   177%  10.7    0s
+
+Cutting planes:
+  Implied bound: 4
+  MIR: 2
+  Flow cover: 3
+  RLT: 26
+
+Explored 752 nodes (5571 simplex iterations) in 0.28 seconds (0.19 work units)
+Thread count was 1 (of 32 available processors)
+
+Solution count 4: 0.364866 0.36339 0.353028 0.333107 
+
+Optimal solution found (tolerance 1.00e-06)
+Best objective 3.648663112398e-01, best bound 3.648665157203e-01, gap 0.0001%
+
+User-callback calls 2160, time in user-callback 0.00 sec

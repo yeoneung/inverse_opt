@@ -1,0 +1,146 @@
+[
+  {
+    "name": "cosine_low",
+    "amplitude": 4,
+    "nu": 0.058037172579633776,
+    "distance": 0.004477839453350066
+  },
+  {
+    "name": "cosine_high",
+    "amplitude": 4,
+    "nu": 0.03419263164513835,
+    "distance": 0.0
+  },
+  {
+    "name": "cosine_mixed",
+    "amplitude": 4,
+    "nu": 0.07563948365218387,
+    "distance": 0.022359357060516692
+  },
+  {
+    "name": "cosine_low",
+    "amplitude": 8,
+    "nu": 0.21085335481645998,
+    "distance": 0.03904702497637244
+  },
+  {
+    "name": "cosine_high",
+    "amplitude": 8,
+    "nu": 0.127087335472904,
+    "distance": 0.0
+  },
+  {
+    "name": "cosine_mixed",
+    "amplitude": 8,
+    "nu": 0.3045408675460287,
+    "distance": 0.05987395135487917
+  },
+  {
+    "name": "cosine_low",
+    "amplitude": 12,
+    "nu": 0.428744908946851,
+    "distance": 0.05491265024649923
+  },
+  {
+    "name": "cosine_high",
+    "amplitude": 12,
+    "nu": 0.2655898330116091,
+    "distance": 0.00766036507650156
+  },
+  {
+    "name": "cosine_mixed",
+    "amplitude": 12,
+    "nu": 0.6187761008160556,
+    "distance": 0.08611146659737819
+  },
+  {
+    "name": "orthogonal_0",
+    "amplitude": 8,
+    "nu": 0.12963637759301702,
+    "distance": 0.02533456445287285
+  },
+  {
+    "name": "orthogonal_1",
+    "amplitude": 8,
+    "nu": 0.2877274883842021,
+    "distance": 0.10663498216064862
+  },
+  {
+    "name": "orthogonal_2",
+    "amplitude": 8,
+    "nu": 0.2853784512879676,
+    "distance": 0.03298372676676158
+  },
+  {
+    "name": "orthogonal_3",
+    "amplitude": 8,
+    "nu": 0.3268850109521928,
+    "distance": 0.05377766850977021
+  },
+  {
+    "name": "orthogonal_4",
+    "amplitude": 8,
+    "nu": 0.20140667810757482,
+    "distance": 0.036324611196442244
+  },
+  {
+    "name": "orthogonal_5",
+    "amplitude": 8,
+    "nu": 0.2581647021808022,
+    "distance": 0.08230386801006029
+  },
+  {
+    "name": "orthogonal_6",
+    "amplitude": 8,
+    "nu": 0.19807601986538004,
+    "distance": 0.07035431357715947
+  },
+  {
+    "name": "orthogonal_7",
+    "amplitude": 8,
+    "nu": 0.27302365066511136,
+    "distance": 0.02388046286305932
+  },
+  {
+    "name": "orthogonal_8",
+    "amplitude": 8,
+    "nu": 0.18628185024707897,
+    "distance": 0.07101895858773262
+  },
+  {
+    "name": "orthogonal_9",
+    "amplitude": 8,
+    "nu": 0.2704982572032416,
+    "distance": 0.012288704348620956
+  },
+  {
+    "name": "orthogonal_10",
+    "amplitude": 8,
+    "nu": 0.290648169553947,
+    "distance": 0.013333975131692226
+  },
+  {
+    "name": "orthogonal_11",
+    "amplitude": 8,
+    "nu": 0.21249799277317374,
+    "distance": 0.00692586916338033
+  },
+  {
+    "name": "orthogonal_12",
+    "amplitude": 8,
+    "nu": 0.18411303622151778,
+    "distance": 0.02925552770674038
+  },
+  {
+    "name": "orthogonal_13",
+    "amplitude": 8,
+    "nu": 0.2306045855338552,
+    "distance": 0.05277222826989676
+  },
+  {
+    "name": "orthogonal_14",
+    "amplitude": 8,
+    "nu": 0.1602068633193852,
+    "distance": 0.00714297695588993
+  }
+]

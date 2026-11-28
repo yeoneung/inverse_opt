@@ -28,3 +28,8 @@ venv/
 !/reproduction/code/results/projection_path_study/
 !/reproduction/code/results/scalar_capacity/
 !/reproduction/code/results/smooth_curvature/
+
+/reproduction/code/global_study/reruns/
+/reproduction/code/global_study/rendered/
+/reproduction/code/global_study/figures/
+/reproduction/code/global_study/vendor/

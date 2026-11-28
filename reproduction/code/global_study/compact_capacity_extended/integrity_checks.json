@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "cases": 6,
+  "detections": 5,
+  "oracle_calls": 57,
+  "maximum_global_oracle_kkt_residual": 9.721141031038272e-09,
+  "instance_array_digests_checked": true,
+  "full_rank_equal_singular_values_checked": true,
+  "certificate_arithmetic_checked": true,
+  "all_histories_and_solver_logs_preserved": true,
+  "prior_six_exchange_failure_preserved": true,
+  "no_formulation_change_within_cohort": true,
+  "scope": "Pilot integrity checks; independent contact-distribution and conic-bound audits are handled separately."
+}

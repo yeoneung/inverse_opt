@@ -1,0 +1,92 @@
+
+Gurobi 14.0.0 (win64) logging started Fri Nov 27 18:08:44 2026
+
+Set parameter OutputFlag to value 1
+Gurobi Optimizer version 14.0.0 build v14.0.0rc1 (win64 - Windows 10.0 (19045.2))
+
+CPU model: Intel(R) Core(TM) i9-14900KF, instruction set [SSE2|AVX|AVX2]
+Thread count: 24 physical cores, 32 logical processors, using up to 1 threads
+
+Non-default parameters:
+TimeLimit  15
+FeasibilityTol  1e-08
+IntFeasTol  1e-08
+MIPGap  1e-06
+MIPGapAbs  1e-07
+OptimalityTol  1e-08
+LogToConsole  0
+NonConvex  2
+Seed  271127
+Threads  1
+
+Optimize a model with 102 rows, 80 columns and 486 nonzeros (Max)
+Model fingerprint: 0x0fc12054
+Model has 30 linear objective coefficients and an objective constant of -0.74750714378456
+Model has 96 quadratic objective terms
+Variable types: 50 continuous, 30 integer (30 binary)
+Coefficient statistics:
+  Matrix range     [6e-04, 7e+00]
+  Objective range  [2e-03, 1e+00]
+  QObjective range [1e-03, 1e+00]
+  Bounds range     [1e-08, 7e+00]
+  RHS range        [2e-08, 1e+00]
+
+Loaded user MIP start with objective 1.28081
+
+Presolve removed 24 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 271 rows, 178 columns, 1039 nonzeros
+Presolved model has 96 bilinear constraint(s)
+
+Solving non-convex MIQCP to global optimality
+
+Variable types: 148 continuous, 30 integer (30 binary)
+
+Root relaxation: objective 4.278234e+00, 214 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    4.27823    0  106    1.28081    4.27823   234%     -    0s
+     0     0    3.00171    0   98    1.28081    3.00171   134%     -    0s
+     0     0    2.95998    0   96    1.28081    2.95998   131%     -    0s
+     0     0    2.95828    0   96    1.28081    2.95828   131%     -    0s
+     0     0    2.95722    0   94    1.28081    2.95722   131%     -    0s
+     0     0    2.95714    0   95    1.28081    2.95714   131%     -    0s
+     0     0    2.95714    0   95    1.28081    2.95714   131%     -    0s
+     0     0    2.95714    0   93    1.28081    2.95714   131%     -    0s
+     0     2    2.95714    0   93    1.28081    2.95714   131%     -    0s
+H   66    56                       1.2808141    2.80830   119%  46.8    0s
+H  203   175                       1.2808141    2.67421   109%  38.1    0s
+H  404   300                       1.2808141    2.53617  98.0%  35.1    0s
+H 1907   638                       1.2963237    2.01015  55.1%  47.2    2s
+H 1944   620                       1.2963237    1.99711  54.1%  47.0    2s
+H 2083   646                       1.2963237    1.97153  52.1%  46.5    2s
+H 2083   646                       1.2963237    1.97153  52.1%  46.5    2s
+H 4456  1150                       1.2963626    1.79747  38.7%  43.0    4s
+H 4493  1171                       1.2963626    1.79747  38.7%  42.8    4s
+H 5253  1295                       1.2963626    1.75813  35.6%  42.0    4s
+  5583  1355    1.34383   27   59    1.29636    1.74709  34.8%  41.9    5s
+H 5716  1364                       1.2963626    1.74016  34.2%  41.7    5s
+H 6514  1465                       1.2963626    1.72054  32.7%  41.1    5s
+H 7846  1399                       1.3328691    1.68080  26.1%  40.4    6s
+H 7868  1395                       1.3328691    1.67833  25.9%  40.4    6s
+H 8078  1405                       1.3328691    1.66953  25.3%  40.3    6s
+H 8343  1408                       1.3328691    1.66126  24.6%  40.1    6s
+ 12142  1409    1.41353   25   71    1.33287    1.57228  18.0%  38.8   10s
+
+Cutting planes:
+  Gomory: 2
+  MIR: 2
+  Flow cover: 7
+  RLT: 85
+
+Explored 17663 nodes (660595 simplex iterations) in 13.80 seconds (15.06 work units)
+Thread count was 1 (of 32 available processors)
+
+Solution count 7: 1.33287 1.29636 1.29636 ... 1.28081
+
+Optimal solution found (tolerance 1.00e-06)
+Best objective 1.332869144373e+00, best bound 1.332870214429e+00, gap 0.0001%
+
+User-callback calls 40515, time in user-callback 0.04 sec
