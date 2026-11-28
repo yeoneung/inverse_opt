@@ -23,6 +23,19 @@ From the submission/reproduction root:
 This reads the recorded results, checks hashes, full latent rank, bound
 arithmetic, counts and timings. It does not solve optimization problems.
 
+report_exchange_stages.py deterministically separates the recorded first
+global solve after corner initialization from later witness updates. Run:
+  python code/global_study/report_exchange_stages.py
+The saved exchange_stage_summary.json is checked by check_global_results.py.
+Eight of the twelve four-parameter positives use no response addition:
+two at q=16 and all six at q=32. Four more q=16 cases detect after added
+responses. The eight-parameter cohort has no first-call detections and
+five final detections. Global-call counts include the final successful or
+inconclusive call. These are reanalyzed saved histories, not a newly timed
+or equal-budget ablation. Every first-call classification agrees with
+the independent anchor check, and all eight first-call positives also
+have the full final witness-reconstruction/upper-transfer validation.
+
 From this directory:
   python render_research_summary.py --output rendered
   python validate_research_results.py --output reruns/independent_checks.json

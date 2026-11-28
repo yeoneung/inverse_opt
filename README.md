@@ -79,6 +79,8 @@ upper-risk optimization, witness/center exchange and complete synthetic records:
 
 - The twelve existing four-parameter capacity instances all yield positive
   lower bounds, compared with none for the original 513-query benchmark.
+  Eight are detected after corner initialization and one global call;
+  only four need additional responses.
 - A separate exploratory eight-parameter, twelve-action cohort detects five of
   six conditions. Its initial failed pilot, extended budget, final failure and
   the unresolved larger eight-parameter pilot are retained.
@@ -105,3 +107,13 @@ speed advantage. Corner initialization costs `2**p` forward solves. The battery
 uses synthetic prices/loads and a lossless model; its risk is a quadratic
 schedule-prediction error, not a monetary loss. All bounds use floating-point
 solvers and numerical checks, not interval validation.
+
+
+The saved-run stage report reproduces first-call counts of 2/6, 6/6 and 0/6
+for the two four-parameter cohorts and the eight-parameter cohort. Median
+global-call counts are 2, 1 and 8.5, respectively. It analyzes preserved
+histories and independent anchor checks, without adding a timed ablation:
+
+```sh
+python -I reproduction/code/global_study/report_exchange_stages.py
+```

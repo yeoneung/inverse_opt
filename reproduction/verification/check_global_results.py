@@ -8,6 +8,7 @@ import hashlib
 import json
 import math
 import statistics
+import importlib.util
 
 import numpy as np
 
@@ -115,8 +116,18 @@ def main():
     assert load('capacity_dual_bounds_checks.json')['passed']
     unresolved = load('coupled_cut_pilot.json')
     assert unresolved['certificate'] == 0
+    spec = importlib.util.spec_from_file_location('exchange_stage_report', STUDY / 'report_exchange_stages.py')
+    stage_module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(stage_module)
+    stages = load('exchange_stage_summary.json')
+    assert stages == stage_module.build_report(STUDY)
+    stage_groups = stages['groups']
+    assert [group['first_call_detections'] for group in stage_groups.values()] == [2, 6, 0]
+    assert [group['global_solver_calls_median'] for group in stage_groups.values()] == [2, 1, 8.5]
     print(json.dumps({'passed': True, 'cases': 27, 'anchor_checks': 92,
                       'positive_counts': [6, 6, 5, 7],
+                      'capacity_first_call_detections': [2, 6, 0],
+                      'capacity_global_calls_medians': [2, 1, 8.5],
                       'raw_artifacts_hashed': len(manifest['files']),
                       'scope': 'Saved data, dimensions, bound arithmetic and integrity; no global-solver rerun.'}, indent=2))
 

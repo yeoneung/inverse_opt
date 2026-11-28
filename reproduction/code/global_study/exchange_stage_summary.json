@@ -1,0 +1,274 @@
+{
+  "passed": true,
+  "scope": "Deterministic saved-run analysis; no optimization rerun or newly timed ablation.",
+  "detection_tolerance": 1e-06,
+  "first_call_definition": "All 2**p parameter-box corner responses, one sampled anchor/separation calculation and one global risk solve, before any newly found response is added.",
+  "call_count_definition": "Number of recorded history entries; includes the final successful or inconclusive global call.",
+  "update_count_definition": "Number of response additions used by the last recorded anchor, equal to solver calls minus one. No claim is made about an unused addition after a final budget stop.",
+  "validation_scope": "Every first-call classification agrees with the saved independent anchor check. All eight first-call positives are final one-call runs and also pass full witness reconstruction and conservative upper-risk transfer.",
+  "source_sha256": {
+    "capacity_p4_validation.json": "d87b6e1ea7ba8a44f181a832a7ec0b41af1ced651eac05c63d3c33660b458c21",
+    "compact_capacity_extended/results.json": "9f12689b2632b700738d2ba066c9e0a3e379ffb8cb0545476367ae1a4589dcd2",
+    "independent_result_checks.json": "2508142e1925ba1fec7be40d46315d8e5171fc2870b7e2fd380bf9f45ef5bf2e"
+  },
+  "groups": {
+    "capacity_q16_p4": {
+      "q": 16,
+      "p": 4,
+      "cases": 6,
+      "first_call_detections": 2,
+      "final_detections": 6,
+      "detections_after_added_responses": 4,
+      "global_solver_calls_median": 2.0,
+      "global_solver_calls_minimum": 1,
+      "global_solver_calls_maximum": 3,
+      "global_solver_calls_total": 12,
+      "rows": [
+        {
+          "label": "p4validation_q16_p4_s846100_c0.7",
+          "initial_corner_queries": 16,
+          "global_solver_calls": 3,
+          "post_corner_updates_used_for_last_anchor": 2,
+          "first_call_certificate": 0.0,
+          "first_call_independently_rechecked_certificate": 0.0,
+          "detected_on_first_call": false,
+          "final_detected": true,
+          "final_validated_certificate": 0.0017145356723792249,
+          "stopping_reason": "positive_certificate"
+        },
+        {
+          "label": "p4validation_q16_p4_s846100_c1.4",
+          "initial_corner_queries": 16,
+          "global_solver_calls": 1,
+          "post_corner_updates_used_for_last_anchor": 0,
+          "first_call_certificate": 0.008072993549146812,
+          "first_call_independently_rechecked_certificate": 0.008072993549146812,
+          "detected_on_first_call": true,
+          "final_detected": true,
+          "final_validated_certificate": 0.008072993549146812,
+          "stopping_reason": "positive_certificate"
+        },
+        {
+          "label": "p4validation_q16_p4_s846101_c0.7",
+          "initial_corner_queries": 16,
+          "global_solver_calls": 3,
+          "post_corner_updates_used_for_last_anchor": 2,
+          "first_call_certificate": 0.0,
+          "first_call_independently_rechecked_certificate": 0.0,
+          "detected_on_first_call": false,
+          "final_detected": true,
+          "final_validated_certificate": 0.006013578657424357,
+          "stopping_reason": "positive_certificate"
+        },
+        {
+          "label": "p4validation_q16_p4_s846101_c1.4",
+          "initial_corner_queries": 16,
+          "global_solver_calls": 2,
+          "post_corner_updates_used_for_last_anchor": 1,
+          "first_call_certificate": 0.0,
+          "first_call_independently_rechecked_certificate": 0.0,
+          "detected_on_first_call": false,
+          "final_detected": true,
+          "final_validated_certificate": 0.006418675292243936,
+          "stopping_reason": "positive_certificate"
+        },
+        {
+          "label": "p4validation_q16_p4_s846102_c0.7",
+          "initial_corner_queries": 16,
+          "global_solver_calls": 2,
+          "post_corner_updates_used_for_last_anchor": 1,
+          "first_call_certificate": 0.0,
+          "first_call_independently_rechecked_certificate": 0.0,
+          "detected_on_first_call": false,
+          "final_detected": true,
+          "final_validated_certificate": 0.00044712739012031655,
+          "stopping_reason": "positive_certificate"
+        },
+        {
+          "label": "p4validation_q16_p4_s846102_c1.4",
+          "initial_corner_queries": 16,
+          "global_solver_calls": 1,
+          "post_corner_updates_used_for_last_anchor": 0,
+          "first_call_certificate": 0.044374812619192516,
+          "first_call_independently_rechecked_certificate": 0.044374812619192516,
+          "detected_on_first_call": true,
+          "final_detected": true,
+          "final_validated_certificate": 0.044374812619192516,
+          "stopping_reason": "positive_certificate"
+        }
+      ]
+    },
+    "capacity_q32_p4": {
+      "q": 32,
+      "p": 4,
+      "cases": 6,
+      "first_call_detections": 6,
+      "final_detections": 6,
+      "detections_after_added_responses": 0,
+      "global_solver_calls_median": 1.0,
+      "global_solver_calls_minimum": 1,
+      "global_solver_calls_maximum": 1,
+      "global_solver_calls_total": 6,
+      "rows": [
+        {
+          "label": "p4validation_q32_p4_s846100_c0.7",
+          "initial_corner_queries": 16,
+          "global_solver_calls": 1,
+          "post_corner_updates_used_for_last_anchor": 0,
+          "first_call_certificate": 0.0037650969368332454,
+          "first_call_independently_rechecked_certificate": 0.0037650969368332454,
+          "detected_on_first_call": true,
+          "final_detected": true,
+          "final_validated_certificate": 0.003765096936830137,
+          "stopping_reason": "positive_certificate"
+        },
+        {
+          "label": "p4validation_q32_p4_s846100_c1.4",
+          "initial_corner_queries": 16,
+          "global_solver_calls": 1,
+          "post_corner_updates_used_for_last_anchor": 0,
+          "first_call_certificate": 0.014070317700853652,
+          "first_call_independently_rechecked_certificate": 0.014070317700853652,
+          "detected_on_first_call": true,
+          "final_detected": true,
+          "final_validated_certificate": 0.014070317700853874,
+          "stopping_reason": "positive_certificate"
+        },
+        {
+          "label": "p4validation_q32_p4_s846101_c0.7",
+          "initial_corner_queries": 16,
+          "global_solver_calls": 1,
+          "post_corner_updates_used_for_last_anchor": 0,
+          "first_call_certificate": 0.004683569947803612,
+          "first_call_independently_rechecked_certificate": 0.004683569947803612,
+          "detected_on_first_call": true,
+          "final_detected": true,
+          "final_validated_certificate": 0.004683569947803834,
+          "stopping_reason": "positive_certificate"
+        },
+        {
+          "label": "p4validation_q32_p4_s846101_c1.4",
+          "initial_corner_queries": 16,
+          "global_solver_calls": 1,
+          "post_corner_updates_used_for_last_anchor": 0,
+          "first_call_certificate": 0.01825775151010367,
+          "first_call_independently_rechecked_certificate": 0.01825775151010367,
+          "detected_on_first_call": true,
+          "final_detected": true,
+          "final_validated_certificate": 0.018257751510103448,
+          "stopping_reason": "positive_certificate"
+        },
+        {
+          "label": "p4validation_q32_p4_s846102_c0.7",
+          "initial_corner_queries": 16,
+          "global_solver_calls": 1,
+          "post_corner_updates_used_for_last_anchor": 0,
+          "first_call_certificate": 0.002340142317495797,
+          "first_call_independently_rechecked_certificate": 0.002340142317495797,
+          "detected_on_first_call": true,
+          "final_detected": true,
+          "final_validated_certificate": 0.002340142317495686,
+          "stopping_reason": "positive_certificate"
+        },
+        {
+          "label": "p4validation_q32_p4_s846102_c1.4",
+          "initial_corner_queries": 16,
+          "global_solver_calls": 1,
+          "post_corner_updates_used_for_last_anchor": 0,
+          "first_call_certificate": 0.011577253260991904,
+          "first_call_independently_rechecked_certificate": 0.011577253260991904,
+          "detected_on_first_call": true,
+          "final_detected": true,
+          "final_validated_certificate": 0.011577253260991682,
+          "stopping_reason": "positive_certificate"
+        }
+      ]
+    },
+    "capacity_q12_p8": {
+      "q": 12,
+      "p": 8,
+      "cases": 6,
+      "first_call_detections": 0,
+      "final_detections": 5,
+      "detections_after_added_responses": 5,
+      "global_solver_calls_median": 8.5,
+      "global_solver_calls_minimum": 5,
+      "global_solver_calls_maximum": 15,
+      "global_solver_calls_total": 57,
+      "rows": [
+        {
+          "label": "compact_capacity_extended/q12_p8_s846100_c0.7",
+          "initial_corner_queries": 256,
+          "global_solver_calls": 14,
+          "post_corner_updates_used_for_last_anchor": 13,
+          "first_call_certificate": 0.0,
+          "first_call_independently_rechecked_certificate": 0.0,
+          "detected_on_first_call": false,
+          "final_detected": true,
+          "final_validated_certificate": 5.9389773134688184e-05,
+          "stopping_reason": "positive_certificate"
+        },
+        {
+          "label": "compact_capacity_extended/q12_p8_s846100_c1.4",
+          "initial_corner_queries": 256,
+          "global_solver_calls": 5,
+          "post_corner_updates_used_for_last_anchor": 4,
+          "first_call_certificate": 0.0,
+          "first_call_independently_rechecked_certificate": 0.0,
+          "detected_on_first_call": false,
+          "final_detected": true,
+          "final_validated_certificate": 0.00026272839961727357,
+          "stopping_reason": "positive_certificate"
+        },
+        {
+          "label": "compact_capacity_extended/q12_p8_s846101_c0.7",
+          "initial_corner_queries": 256,
+          "global_solver_calls": 15,
+          "post_corner_updates_used_for_last_anchor": 14,
+          "first_call_certificate": 0.0,
+          "first_call_independently_rechecked_certificate": 0.0,
+          "detected_on_first_call": false,
+          "final_detected": false,
+          "final_validated_certificate": 0.0,
+          "stopping_reason": "no_improving_witness_within_oracle_budget"
+        },
+        {
+          "label": "compact_capacity_extended/q12_p8_s846101_c1.4",
+          "initial_corner_queries": 256,
+          "global_solver_calls": 6,
+          "post_corner_updates_used_for_last_anchor": 5,
+          "first_call_certificate": 0.0,
+          "first_call_independently_rechecked_certificate": 0.0,
+          "detected_on_first_call": false,
+          "final_detected": true,
+          "final_validated_certificate": 0.0015816534037993435,
+          "stopping_reason": "positive_certificate"
+        },
+        {
+          "label": "compact_capacity_extended/q12_p8_s846102_c0.7",
+          "initial_corner_queries": 256,
+          "global_solver_calls": 10,
+          "post_corner_updates_used_for_last_anchor": 9,
+          "first_call_certificate": 0.0,
+          "first_call_independently_rechecked_certificate": 0.0,
+          "detected_on_first_call": false,
+          "final_detected": true,
+          "final_validated_certificate": 0.00011791920624171226,
+          "stopping_reason": "positive_certificate"
+        },
+        {
+          "label": "compact_capacity_extended/q12_p8_s846102_c1.4",
+          "initial_corner_queries": 256,
+          "global_solver_calls": 7,
+          "post_corner_updates_used_for_last_anchor": 6,
+          "first_call_certificate": 0.0,
+          "first_call_independently_rechecked_certificate": 0.0,
+          "detected_on_first_call": false,
+          "final_detected": true,
+          "final_validated_certificate": 1.2698372955366466e-05,
+          "stopping_reason": "positive_certificate"
+        }
+      ]
+    }
+  }
+}
