@@ -25,7 +25,7 @@ experiments/report_jogo.py generates the compact balanced-study results,
 the computational-design appendix and the separate folded-ball controls
 from the complete raw runs. Every condition and all table values are
 retained. Its legacy data calculations are unchanged.
-experiments/render_submission_figures.py redraws all five figures from
+experiments/render_submission_figures.py redraws the four publication figures from
 the same saved values at a readable column width, with labeled panels,
 9--10 point text and embedded vector fonts. Run:
   python -I code/experiments/render_submission_figures.py
@@ -59,6 +59,9 @@ projection paths, coupled capacity, anisotropic multidimensional boxes,
 computational separation, and smooth curvature. The anisotropic study is
 an exploratory retained control and is not evidence for the new balanced
 latent-dimension experiment. Code/run_numerics.py lists all entry points.
+The smooth-curvature study is retained for separate exploration; it is
+outside the current polyhedral-target manuscript. Its data and tests have
+not been removed or changed.
 Renderers for preceding studies write verification/rendered_outputs;
 report_balanced_base.py updates the retained numerical section and Fig3;
 report_jogo.py generates the active JGO section from the same complete data.

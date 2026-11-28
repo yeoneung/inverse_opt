@@ -72,27 +72,20 @@ def _float(text, kind, label):
 
 def compact_render(report):
     legacy, _, summary = parts(report)
-    table_reference = _float(legacy, 'table', 'tab:balanced-reference')
     table_scaling = _float(legacy, 'table', 'tab:balanced-scaling')
     figure = _float(legacy, 'figure', 'fig:balanced-scaling')
-    table_reference = table_reference.replace('query and anchor costs', 'query and sampled-center costs')
     table_scaling = table_scaling.replace('anchor updates', 'sampled-center updates').replace('upper-risk calculation', 'global risk upper bound')
     figure = figure.replace('upper-risk excess', 'excess of the global risk upper bound')
     figure = figure.replace(r'\caption{Left:', r'\caption{(a):').replace('Right: complete timing', '(b): complete timing')
     figure = figure.replace('median total.}', 'median total}')
     table_scaling = table_scaling.replace('the global risk upper bound and', 'calculation of the global risk upper bound and')
     low, high = [100*x for x in summary['affine_box_fraction_in_successful_p2_runs']]
-    text = r"""The twelve cases with $q=4$ have independently computed global reference risks.
-Table~\ref{tab:balanced-reference} compares these with the 513-query
-certificates. Reference lower bounds establish positive penalties in all
-six cases at each latent dimension. The query method detects four
-of the six two-parameter cases and none of the three-parameter cases;
-the covering-only bound detects none of the twelve. Thus the failures
-cannot be attributed to a vanishing penalty. Capture is the median ratio
-of the lower penalty to the midpoint of its reference penalty interval, including
-zero detections.
-
-""" + table_reference + r"""
+    text = r"""Independent global references establish positive penalties in all twelve
+$q=4$ cases. With 513 queries, the query method detects four of the six
+two-parameter cases and none of the six three-parameter cases; the
+covering-only bound detects none. Thus the failures cannot be attributed
+to a vanishing penalty. Appendix~\ref{sec:balanced-reference} gives the
+reference construction and detailed comparison.
 
 Increasing action dimension while keeping two latent parameters still
 permits detection: all six cases are detected at each of $q=8$ and $q=32$
@@ -117,7 +110,7 @@ all queries, center updates, global bounds and conic checks.
 
 
 PROTOCOL_DETAILS = r"""\section{Computational Design and Numerical Checks}\label{sec:computational-details}
-\subsection{Scalar Capacity Settings}
+\subsection{Scalar Capacity Settings}\label{sec:scalar-settings}
 Consider $q$ allocations with individual bounds and several shared
 capacity constraints. We use $q=4,8,16,32$ and a scalar compatible parameter
 $t\in[0,4]$. Draw a standard Gaussian vector and normalize it to obtain $d$;
@@ -149,8 +142,17 @@ disagreement between the recovered path and direct forward solves is
 $1.86\times10^{-6}$.
 
 The certificate implementations also support homogeneous conic fitting
-with interval or ball priors; the times in the table concern intervals.
-The experiments compare deterministic prediction risks on specified target problems.
+with interval or ball priors; the times in
+Table~\ref{tab:capacity-cost} concern intervals. Each candidate radius
+uses a primal and a dual SOCP. The reference column includes recovering
+the full scalar path and computing both minimax centers; the check
+columns exclude obtaining the sampled center and querying forward
+responses. Adaptation gives stronger lower penalties but costs more than
+the original check. In these scalar problems it is also slower than
+complete path recovery. The experiments compare deterministic prediction
+risks on specified target problems.
+
+SCALAR_COST_TABLE
 
 
 \subsection{Multidimensional Capacity Settings}\label{sec:balanced-protocol}
@@ -213,6 +215,8 @@ The query procedure receives none of this reference partition or its
 centers. A separate supplied-center calculation measures geometric
 calibration only and is identified as such below.
 
+REFERENCE_COMPARISON
+
 \subsection{Global-Solver Settings and Checks}
 The exchange implementation uses Gurobi 14.0.0 \citep{gurobi2026}.
 Separate Gurobi and SCIP 10.0.2 formulations \citep{achterberg2009}
@@ -232,12 +236,48 @@ twenty iterations and every final condition are retained with the code.
 """
 
 
+def scalar_cost_table():
+    groups = json.loads((ROOT/'code/results/scalar_capacity/summary.json').read_text())['summary']
+    rows = '\n'.join(str(row['dimension'])+' & '+f"{row['median_certificate_ms']:.1f}"+' & '+
+                     f"{row['median_adaptive_ms']:.1f}"+' & '+f"{row['median_full_recovery_ms']:.1f}"+
+                     ' & '+str(row['maximum_adaptive_solves'])+r'\\' for row in groups)
+    return r"""\FloatBarrier
+\begin{table}[!htbp]\centering\small
+\caption{Median computational times in milliseconds. The two certificate columns
+use a supplied reference center and exclude forward-query and sampled center costs. Reference
+times include complete path recovery and both minimax centers. Radii is
+the maximum number of candidate convex distances evaluated per instance.}
+\label{tab:capacity-cost}
+\begin{tabular}{rrrrr}\toprule
+$q$ & Original & Adaptive & Reference & Radii\\\midrule
+""" + rows + r"""
+\bottomrule\end{tabular}
+\end{table}
+\FloatBarrier"""
+
+
+def reference_comparison(report):
+    legacy, _, _ = parts(report)
+    table = _float(legacy, 'table', 'tab:balanced-reference')
+    table = table.replace('query and anchor costs', 'query and sampled-center costs')
+    return r"""Table~\ref{tab:balanced-reference} compares the independent reference risks
+with the 513-query certificates. Reference lower bounds establish positive
+penalties in all six cases at each latent dimension. The query method
+detects four of the six two-parameter cases and none of the three-parameter
+cases; the covering-only bound detects none of the twelve. Capture is
+the median ratio of the lower penalty to the midpoint of its reference
+penalty interval, including zero detections.
+
+""" + table
+
+
 def computational_details(report):
     legacy, _, _ = parts(report)
     # Keep numerical diagnostics and calibration values without interrupting main results.
     diagnostics = legacy.split(r'\subsection{Numerical Acceptance Checks}', 1)[1]
     diagnostics = diagnostics.replace('These floating-point diagnostics do not replace interval validation.', '')
-    protocol = PROTOCOL_DETAILS.replace('global upper-risk calculation', 'global risk upper bound calculation').replace('anchors.', 'sampled centers.').replace('reconstructed witnesses', 'reconstructed responses').replace('anchor correction', 'center correction')
+    protocol = PROTOCOL_DETAILS.replace('SCALAR_COST_TABLE', scalar_cost_table()).replace('REFERENCE_COMPARISON', reference_comparison(report))
+    protocol = protocol.replace('global upper-risk calculation', 'global risk upper bound calculation').replace('anchors.', 'sampled centers.').replace('reconstructed witnesses', 'reconstructed responses').replace('anchor correction', 'center correction')
     protocol = protocol.replace('generated as in\nSection~\\ref{sec:scalar-capacity}', 'generated by the scalar draws above')
     protocol += 'The exhaustive reference is a transparent small-instance baseline, not an optimized global solver.\n'
     text = protocol + r"""

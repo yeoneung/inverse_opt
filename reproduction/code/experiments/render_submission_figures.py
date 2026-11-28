@@ -1,4 +1,4 @@
-"""Render five readable vector figures from the retained data only.
+"""Render four readable vector figures from the retained data only.
 
 Run this script from any working directory.  The default output is the
 reproduction root's figures directory; --output selects another directory.
@@ -506,7 +506,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path, default=ROOT / "figures")
     parser.add_argument("--checks", type=Path,
-                        default=ROOT / "verification/guide_revision_20261128/figure_checks.json")
+                        default=ROOT / "verification/length_revision_20261128/figure_checks.json")
     args = parser.parse_args()
     args.output.mkdir(parents=True, exist_ok=True)
     args.checks.parent.mkdir(parents=True, exist_ok=True)
@@ -517,7 +517,9 @@ def main():
               "source_files": {key: {"relative_path": path.relative_to(ROOT).as_posix(),
                                      "sha256": digest(path)} for key, path in SOURCES.items()},
               "figures": {}}
-    for index, render in enumerate([figure1, figure2, figure3, figure4, figure5], 1):
+    # The global overview duplicates the capacity and battery tables; retain
+    # its rendering function for optional reuse, outside the publication set.
+    for index, render in enumerate([figure1, figure2, figure3, figure5], 1):
         fig, info = render()
         name = f"Fig{index}"
         checks["figures"][name] = save(fig, info, name, args.output)
@@ -535,7 +537,7 @@ def main():
             for name in checks["figures"]):
         checks["visual_inspection"] = previous_checks["visual_inspection"]
     args.checks.write_text(json.dumps(checks, indent=2) + "\n", encoding="utf-8")
-    print("Rendered Fig1--Fig5 at 119 mm with unchanged data; saved figure checks.")
+    print("Rendered Fig1--Fig4 at 119 mm with unchanged data; saved figure checks.")
 
 
 if __name__ == "__main__":
